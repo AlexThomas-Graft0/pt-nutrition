@@ -38,8 +38,8 @@ export default function Navbar() {
         <Link href={link == "Home" ? "/" : `/${link}`}>
           <a
             className={`${
-              setActiveClasses(link) ? "font-bold text-white underline" : ""
-            } inline-block px-4 py-2 text-gray-100 hover:text-white hover:underline`}
+              setActiveClasses(link) ? "font-bold text-2xl " : ""
+            } inline-block px-4 py-2 text-black-100 hover:text-white hover:`}
           >
             {link}
           </a>
@@ -49,23 +49,11 @@ export default function Navbar() {
   });
   return (
     <>
-      <div className="w-full flex justify-between items-center p-5 my-3">
-        <Link href="/contact">
-          <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
-            Contact
-          </a>
-        </Link>
-        <Link href="/contact">
-          <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
-            Free Consultation
-          </a>
-        </Link>
-      </div>
-      <nav className={`text-white lg:bg-opacity-90 lg:bg-green-500 py-2`}>
-        <div className="container flex flex-wrap items-center justify-between w-full mx-auto mt-0">
+      <nav className={`text-gray-600 lg:bg-opacity-80 lg:bg-blue-300 py-2`}>
+        <div className="container flex flex-wrap items-center justify-between w-full p-3 mx-auto mt-0">
           <div className="flex justify-start pl-4">
             <Link href="/">
-              <a className="text-2xl font-bold text-white no-underline toggleColour hover:no-underline lg:text-4xl">
+              <a className="text-2xl font-bold no-underline toggleColour hover:no-underline lg:text-4xl">
                 PT Nutrition Marketing
               </a>
             </Link>
@@ -89,7 +77,7 @@ export default function Navbar() {
           <div
             className={`${
               isOpen ? "" : "hidden"
-            } z-20 flex-grow w-full p-4 mt-2 text-black bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
+            } z-20 flex-grow w-full p-4 mt-2 text-2xl text-gray-600 bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
             id="nav-content"
           >
             <ul className="items-center justify-end flex-1 list-reset lg:flex">
