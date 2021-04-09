@@ -18,7 +18,7 @@ export default function Home() {
       <Layout title="Home">
         <div className="flex flex-wrap items-center justify-around max-w-7xl mt-6 sm:w-full">
           <a
-            href="/web-design"
+            href="/pt-nutrition-web-design"
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <Image
@@ -140,76 +140,76 @@ export default function Home() {
         </div>
         {/* marketing */}
         {/* blog */}
-        <div class="flex flex-wrap px-6">
-          <div class="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
-            <div class="bg-white hover:shadow-xl cursor-pointer">
-              <div class="">
+        <div className="flex flex-wrap px-6">
+          <div className="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
+            <div className="bg-white hover:shadow-xl cursor-pointer">
+              <div className="">
                 <img
                   src="https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   alt=""
-                  class="h-56 w-full border-white border-8 hover:opacity-25"
+                  className="h-56 w-full border-white border-8 hover:opacity-25"
                 />
               </div>
-              <div class="px-4 py-4 md:px-10">
-                <h1 class="font-bold text-lg">
+              <div className="px-4 py-4 md:px-10">
+                <h1 className="font-bold text-lg">
                   7 Lead Generation Tips for PTs Websites around Cardiff
                 </h1>
-                <p class="py-4">
+                <p className="py-4">
                   How do <span className="font-bold">you</span> attract these
                   new clients – especially in today's world where website
                   visitors have short attention spans and access to more
                   competition?
                 </p>
-                <p class="py-4">
+                <p className="py-4">
                   Everyone seems to be a PT lately - how can{" "}
                   <span className="font-bold">you</span> stand out against the
                   crowd?
                 </p>
-                <p class="py-4">
+                <p className="py-4">
                   2020 is a difficult year for gaining clients, gyms are closed,
                   nobody has equipment at home, how can{" "}
                   <span className="font-bold">you</span> get clients during this
                   period?
                 </p>
-                <div class="flex flex-col justify-center pt-8">
-                  <div class=" text-sm font-medium">April 1st,2021</div>
+                <div className="flex flex-col justify-center pt-8">
+                  <div className=" text-sm font-medium">April 1st,2021</div>
                   <div>Read More &rarr;</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
-            <div class="bg-white hover:shadow-xl cursor-pointer">
-              <div class="">
+          <div className="w-full lg:w-1/2 md:px-4 lg:px-6 py-5">
+            <div className="bg-white hover:shadow-xl cursor-pointer">
+              <div className="">
                 <img
                   src="https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   alt=""
-                  class="h-56 w-full border-white border-8 hover:opacity-25"
+                  className="h-56 w-full border-white border-8 hover:opacity-25"
                 />
               </div>
-              <div class="px-4 py-4 md:px-10">
-                <h1 class="font-bold text-lg">
+              <div className="px-4 py-4 md:px-10">
+                <h1 className="font-bold text-lg">
                   7 Lead Generation Tips for PTs Websites around Cardiff
                 </h1>
-                <p class="py-4">
+                <p className="py-4">
                   How do <span className="font-bold">you</span> attract these
                   new clients – especially in today's world where website
                   visitors have short attention spans and access to more
                   competition?
                 </p>
-                <p class="py-4">
+                <p className="py-4">
                   Everyone seems to be a PT lately - how can{" "}
                   <span className="font-bold">you</span> stand out against the
                   crowd?
                 </p>
-                <p class="py-4">
+                <p className="py-4">
                   2020 is a difficult year for gaining clients, gyms are closed,
                   nobody has equipment at home, how can{" "}
                   <span className="font-bold">you</span> get clients during this
                   period?
                 </p>
-                <div class="flex flex-col justify-center pt-8">
-                  <div class=" text-sm font-medium">April 1st,2021</div>
+                <div className="flex flex-col justify-center pt-8">
+                  <div className=" text-sm font-medium">April 1st,2021</div>
                   <div>Read More &rarr;</div>
                 </div>
               </div>
