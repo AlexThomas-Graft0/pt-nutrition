@@ -7,7 +7,7 @@ export default function ContactForm() {
   const message = "Message Sent!";
   const error = "Failed, please refresh and try again!";
   return (
-    <div className="flex justify-center items-center min-h-screen w-full dark:bg-gray-900">
+    <div className="flex flex-col justify-center items-center h-full w-full dark:bg-gray-900">
       <div className="">
         <div className="border p-5 rounded-md shadow-sm">
           <div className="text-center">

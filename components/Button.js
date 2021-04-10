@@ -5,7 +5,7 @@ export default function Button({
   type,
   onClick,
 }) {
-  rounded &&= "rounded";
+  rounded == true ? "rounded" : null;
   return (
     <button
       type={type}

@@ -105,7 +105,7 @@ export default function ptNutritionWebDesign({ websiteFeatures }) {
         </div>
         {/* website neccessities grid */}
         {/* contact form */}
-        <div class="w-full flex justify-around items-center">
+        <div class="w-full flex justify-around items-center mt-3">
           <ContactForm />
           <FreeAnalysis />
         </div>
