@@ -3,7 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
-
+import {
+  LockOpenIcon,
+  ViewListIcon,
+  LightningBoltIcon,
+  FastForwardIcon,
+  SearchIcon,
+  AcademicCapIcon,
+  ClipboardCheckIcon,
+  EyeIcon,
+  HeartIcon,
+  FireIcon,
+  ThumbUpIcon,
+  ChartBarIcon,
+} from "@heroicons/react/outline";
+import Icon from "../components/Icon";
 export default function ptNutritionWebDesign({ websiteFeatures }) {
   return (
     <>
@@ -93,19 +107,20 @@ export default function ptNutritionWebDesign({ websiteFeatures }) {
         {/* image */}
         {/* website neccessities grid */}
         <div className="container flex flex-wrap items-center justify-around max-w-5xl mt-6 sm:w-full">
-          {websiteFeatures?.map(({ icon, text }, i) => (
+          {websiteFeatures?.map(({ icon, text, name }, i) => (
             <div
+              key={i}
               href="/pt-nutrition-web-design"
-              className="flex justify-center items-center p-2 border w-1/4 h-20 rounded"
+              className="flex flex-col justify-center items-center p-2 border w-1/4 h-20 rounded"
             >
-              {/* <div>{icon}</div> */}
+              <Icon name={name} />
               <div>{text}</div>
             </div>
           ))}
         </div>
         {/* website neccessities grid */}
         {/* contact form */}
-        <div class="w-full flex justify-around items-center mt-3">
+        <div className="w-full flex justify-around items-center mt-3">
           <ContactForm />
           <FreeAnalysis />
         </div>
@@ -117,6 +132,7 @@ export default function ptNutritionWebDesign({ websiteFeatures }) {
 
 export async function getStaticProps(context) {
   const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+  // const websiteFeatures = await res.json();
   const websiteFeatures = await res.json();
 
   if (!websiteFeatures) {
