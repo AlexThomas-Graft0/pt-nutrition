@@ -119,7 +119,7 @@ export default function Home() {
         </div>
         {/* banner */}
         {/* free website analysis */}
-        <div className="flex flex-col justify-center items-center px-3 py-5 my-3 space-y-5 bg-green-500 w-full text-gray-50">
+        <div className="flex flex-col justify-center items-center px-3 py-5 my-3 space-y-5 bg-green-500 w-full text-white">
           <div className="text-3xl">
             Get A Free Marketing Analysis Of Your Website
           </div>

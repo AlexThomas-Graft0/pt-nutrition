@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "../components/ContactForm";
+import FreeAnalysis from "../components/FreeAnalysis";
 
 export default function ptNutritionWebDesign({ websiteFeatures }) {
   return (
@@ -90,20 +92,24 @@ export default function ptNutritionWebDesign({ websiteFeatures }) {
         </div>
         {/* image */}
         {/* website neccessities grid */}
-        <div className="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1 md:-mx-1 lg:-mx-1 xl:-mx-1">
+        <div className="container flex flex-wrap items-center justify-around max-w-5xl mt-6 sm:w-full">
           {websiteFeatures?.map(({ icon, text }, i) => (
             <div
-              key={i}
-              className="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-full md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4"
+              href="/pt-nutrition-web-design"
+              className="flex justify-center items-center p-2 border w-1/4 h-20 rounded"
             >
-              <div className="flex flex-col justify-center items-center p-5">
-                {/* <div>{icon}</div> */}
-                <div>{text}</div>
-              </div>
+              {/* <div>{icon}</div> */}
+              <div>{text}</div>
             </div>
           ))}
         </div>
         {/* website neccessities grid */}
+        {/* contact form */}
+        <div class="w-full flex justify-around items-center">
+          <ContactForm />
+          <FreeAnalysis />
+        </div>
+        {/* contact form */}
       </Layout>
     </>
   );

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Button from "../components/Button";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -50,16 +51,16 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full flex justify-between items-center p-5 my-3">
-        <Link href="/contact">
-          <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
-            Contact
-          </a>
-        </Link>
-        <Link href="/contact">
-          <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
-            Free Consultation
-          </a>
-        </Link>
+        <Button color="green" rounded>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
+        </Button>
+        <Button color="green" rounded>
+          <Link href="/contact">
+            <a>Free Consultation</a>
+          </Link>
+        </Button>
       </div>
       <nav className={`text-white lg:bg-opacity-90 lg:bg-green-500 py-2`}>
         <div className="container flex flex-wrap items-center justify-between w-full mx-auto mt-0">
