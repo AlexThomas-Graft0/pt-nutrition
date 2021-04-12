@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Cards from "../components/Cards";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,102 +17,7 @@ export default function Home() {
         </div>
       </div>
       <Layout title="Home">
-        <div className="flex flex-wrap items-center justify-around max-w-7xl mt-6 sm:w-full">
-          <a
-            href="/pt-nutrition-web-design"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <Image
-              src="/images/website.png"
-              alt="websites"
-              width={250}
-              height={250}
-            />
-            <h3 className="text-xl font-bold">Websites that work &rarr;</h3>
-            <p className="mt-4">
-              We don't just create websites. We create websites that get
-              results.
-            </p>
-            <div className="text-xs">Learn more about web design</div>
-          </a>
-
-          <a
-            href="/ppc-for-pt-nutrition"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <Image src="/images/ppc.png" alt="ppc" width={250} height={250} />
-            <h3 className="text-xl font-bold">Google AdwWordsr Click &rarr;</h3>
-            <p className="mt-4 text-xl">
-              We aim to get you the best results and land you leads through
-              targets ads.
-            </p>
-            <div className="text-xs">Learn more about AdWords</div>
-          </a>
-
-          <a
-            href="/seo-for-pt-nutrition"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <Image src="/images/seo.png" alt="seo" width={250} height={250} />
-            <h3 className="text-xl font-bold">SEO &rarr;</h3>
-            <p className="mt-4">
-              Effective on-page and off-page SEO to get you ranking in top
-              positions on Google.
-            </p>
-            <div className="text-xs">Learn more about web SEO</div>
-          </a>
-
-          <a
-            href="/content-marketing"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <Image
-              src="/images/content.png"
-              alt="content"
-              width={250}
-              height={250}
-            />
-            <h3 className="text-xl font-bold">Content Writing &rarr;</h3>
-            <p className="mt-4">
-              Our writers are highly-skilled communicators and persuaders.
-            </p>
-            <div className="text-xs">Learn more about content writing</div>
-          </a>
-
-          <a
-            href="/online-advertising"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <Image
-              src="/images/target.png"
-              alt="target"
-              width={250}
-              height={250}
-            />
-            <h3 className="text-xl font-bold">Online Advertising &rarr;</h3>
-            <p className="mt-4">
-              Target the right person with the right message at the right time.
-            </p>
-            <div className="text-xs">Learn more about online ads</div>
-          </a>
-
-          <a
-            href="/social-media"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <Image
-              src="/images/social.png"
-              alt="social"
-              width={250}
-              height={250}
-            />
-            <h3 className="text-xl font-bold">Social Media &rarr;</h3>
-            <p className="mt-4">
-              Social media growth to improve credability and gain new clients.
-            </p>
-            <div className="text-xs">Learn more about social media</div>
-          </a>
-        </div>
+        <Cards />
         {/* banner */}
         <div className="flex justify-center items-center text-3xl p-3 my-3 md:h-20">
           We focus on getting you more clients, while you focus on running your
