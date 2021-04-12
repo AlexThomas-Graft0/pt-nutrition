@@ -45,7 +45,8 @@ export default function Navbar() {
           </a>
         </Link>
       </li>
-    );
+      
+    );  
   });
   return (
     <>
