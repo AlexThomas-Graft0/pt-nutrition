@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +19,17 @@ import {
   ChartBarIcon,
 } from "@heroicons/react/outline";
 import Icon from "../components/Icon";
-export default function ptNutritionWebDesign({ websiteFeatures }) {
+export default function ptNutritionWebDesign() {
+  const [features, setFeatures] = useState([]);
+  async function fetchFeatures() {
+    const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+    const websiteFeatures = await res.json();
+    setFeatures(websiteFeatures);
+  }
+  useEffect(() => {
+    fetchFeatures();
+  });
+
   return (
     <>
       <div className="h-96 bg-web-design-header-image bg-contain bg-center flex flex-col justify-center items-center text-gray-800">
@@ -107,7 +118,7 @@ export default function ptNutritionWebDesign({ websiteFeatures }) {
         {/* image */}
         {/* website neccessities grid */}
         <div className="container flex flex-wrap items-center justify-around max-w-5xl mt-6 sm:w-full">
-          {websiteFeatures?.map(({ icon, text, name }, i) => (
+          {features.map(({ icon, text, name }, i) => (
             <div
               key={i}
               href="/pt-nutrition-web-design"
@@ -130,21 +141,21 @@ export default function ptNutritionWebDesign({ websiteFeatures }) {
   );
 }
 
-export async function getStaticProps(context) {
-  const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
-  // const websiteFeatures = await res.json();
-  const websiteFeatures = await res.json();
+// export async function getStaticProps(context) {
+//   const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+//   // const websiteFeatures = await res.json();
+//   const websiteFeatures = await res.json();
 
-  if (!websiteFeatures) {
-    return {
-      notFound: true,
-    };
-  }
+//   if (!websiteFeatures) {
+//     return {
+//       notFound: true,
+//     };
+//   }
 
-  //   console.log(res);
-  //   console.log(websiteFeatures);
+//   //   console.log(res);
+//   //   console.log(websiteFeatures);
 
-  return {
-    props: { websiteFeatures }, // will be passed to the page component as props
-  };
-}
+//   return {
+//     props: { websiteFeatures }, // will be passed to the page component as props
+//   };
+// }
