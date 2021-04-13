@@ -21,9 +21,9 @@ export default function Cards() {
     {
       link: "seo-for-pt-nutrition",
       icon: "website",
-      title: "Websites that work",
+      title: "SEO",
       body:
-        "We don't just create websites. We create websites that get results.",
+        "Effective on-page and off-page SEO to get you ranking in top positions on Google.",
       subtext: "Learn more about web SEO",
     },
     {

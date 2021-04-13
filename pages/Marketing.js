@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
+import { LockOpenIcon } from "@heroicons/react/outline";
 
 export default function Marketing() {
   return (
@@ -8,6 +9,7 @@ export default function Marketing() {
       <h2 /> page
       <div>
         <Cards />
+        <LockOpenIcon class="h-5 w-5 text-green-500" />
       </div>
     </Layout>
   );
