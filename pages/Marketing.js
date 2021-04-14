@@ -16,10 +16,10 @@ export default function Marketing() {
           marketing and development. We provide the following services:
         </div>
         <Cards />
-        <div className="text-xl text-center justify-center font-bold mb-5">
+        <div className="text-xl text-center justify-center font-bold m-10">
           Scenario #1: You Already Have A Website
         </div>
-        <div className="text-xl text-center justify-center mb-5">
+        <div className="text-xl text-center justify-center">
           If you already have a website, was is just created by an
           individual/company who creates websites that they thought may look
           good or does it actually work? Does it send the right message across
@@ -27,7 +27,7 @@ export default function Marketing() {
           fulfill your business objective of getting more patients?
         </div>
       </div>
-      <div className="text-xl text-center justify-center font-bold mb-5">
+      <div className="text-xl text-center justify-center font-bold m-10">
         Scenario #2: You Don't Have A Website Yet
       </div>
       <div className="text-xl text-center justify-center mb-5">
