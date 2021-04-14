@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
+import Link from "next/link";
 
 export default function Marketing() {
   return (
@@ -34,6 +35,18 @@ export default function Marketing() {
         one in this competitive market. All credible Pts & Nutrtionists have
         effective websites that showcase their expertise and experience and it
         results in more clients and higher profits.
+      </div>
+      <div className="w-full flex justify-around items-center p-5 my-5">
+        <Link href="/contact">
+          <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
+            Contact
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
+            Free Consultation
+          </a>
+        </Link>
       </div>
     </Layout>
   );
