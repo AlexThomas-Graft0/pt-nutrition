@@ -36,6 +36,15 @@ export default function Marketing() {
         effective websites that showcase their expertise and experience and it
         results in more clients and higher profits.
       </div>
+      <div className="flex flex-col justify-center items-center px-3 py-5 my-3 space-y-5 bg-green-500 w-full text-white">
+        <div className="text-3xl">
+          Get A Free Marketing Analysis Of Your Website
+        </div>
+        <div className="text-xl">
+          Our team will go through your website and give you actionable advice
+          to get more clients.
+        </div>
+      </div>
       <div className="w-full flex justify-around items-center p-5 my-5">
         <Link href="/contact">
           <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
