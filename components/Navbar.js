@@ -52,12 +52,12 @@ export default function Navbar() {
     <>
       <div className="w-full flex justify-between items-center p-5 my-3">
         <Button color="green" rounded>
-          <Link href="/contact">
+          <Link href="/Contact">
             <a>Contact</a>
           </Link>
         </Button>
         <Button color="green" rounded>
-          <Link href="/contact">
+          <Link href="/Contact">
             <a>Free Consultation</a>
           </Link>
         </Button>

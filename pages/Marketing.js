@@ -46,12 +46,12 @@ export default function Marketing() {
         </div>
       </div>
       <div className="w-full flex justify-around items-center p-5 my-5">
-        <Link href="/contact">
+        <Link href="/Contact">
           <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
             Contact
           </a>
         </Link>
-        <Link href="/contact">
+        <Link href="/Contact">
           <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
             Free Consultation
           </a>
