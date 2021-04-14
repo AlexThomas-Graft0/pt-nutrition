@@ -15,7 +15,7 @@ export default function Marketing() {
           Nutritionist business. We get more clients through effective online
           marketing and development.
         </div>
-        <FreeAnalysis></FreeAnalysis>
+        <FreeAnalysis />
       </div>
       <div className="flex flex-col justify-center items-center px-3 py-5 my-3 space-y-5 bg-green-500 w-full text-white">
         <div className="text-3xl">
