@@ -125,12 +125,12 @@ export default function Home() {
         {/* Banner */}
         <div className="w-full flex justify-around items-center p-5 my-5">
           <Link href="/Contact">
-            <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
+            <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
               Contact
             </a>
           </Link>
           <Link href="/Contact">
-            <a className="bg-green-400 hover:bg-green-300 text-xs px-2 py-1 rounded">
+            <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
               Free Consultation
             </a>
           </Link>
