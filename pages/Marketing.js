@@ -16,7 +16,7 @@ export default function Marketing() {
           marketing and development. We provide the following services:
         </div>
       </div>
-      <Cards /* does not want to be inside a div */ />
+      <Cards />
       <div className="text-xl  font-bold m-10">
         Scenario #1: You Already Have A Website
       </div>
