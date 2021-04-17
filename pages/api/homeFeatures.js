@@ -1,4 +1,4 @@
-export default function websiteFeatures(req, res) {
+export default function homeFeatures(req, res) {
   res.status(200).json([
     {
       link: "web-design",

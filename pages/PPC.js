@@ -1,9 +1,21 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
+import Cards from "../components/Cards";
 
 export default function PPC() {
+  const [features, setFeatures] = useState([]);
+  async function fetchFeatures() {
+    const res = await fetch(`http://localhost:3000/api/ppcFeatures`);
+    const websiteFeatures = await res.json();
+    setFeatures(websiteFeatures);
+  }
+  useEffect(() => {
+    fetchFeatures();
+  });
+
   return (
     <>
       <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
@@ -56,6 +68,9 @@ export default function PPC() {
             </div>
           </div>
         </div>
+        {/* CARDS */}
+        <Cards cardData={features} />
+        {/* CARDS */}
         {/* contact form */}
         <div className="w-full flex justify-around items-center mt-3">
           <ContactForm />
