@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "header-image": "url('/img/header-image.jpg')",
+        "web-design-header-image":
+          "url('/images/dentist-web-design-background.jpg')",
       }),
     },
   },
