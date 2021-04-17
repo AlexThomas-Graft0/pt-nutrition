@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Layout from "../components/Layout";
+import ContactForm from "../components/ContactForm";
+import FreeAnalysis from "../components/FreeAnalysis";
 
 export default function PPC() {
   return (
@@ -54,6 +56,12 @@ export default function PPC() {
             </div>
           </div>
         </div>
+        {/* contact form */}
+        <div className="w-full flex justify-around items-center mt-3">
+          <ContactForm />
+          <FreeAnalysis />
+        </div>
+        {/* contact form */}{" "}
       </Layout>
     </>
   );
