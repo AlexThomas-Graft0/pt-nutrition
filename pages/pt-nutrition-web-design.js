@@ -5,7 +5,7 @@ import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
 import Icon from "../components/Icon";
 
-export default function ptNutritionWebDesign() {
+export default function PtNutritionWebDesign() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
     const res = await fetch(`http://localhost:3000/api/websiteFeatures`);

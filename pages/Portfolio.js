@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import FreeAnalysis from "../components/FreeAnalysis";
 import Link from "next/link";
 
-export default function Marketing() {
+export default function Portfolio() {
   return (
     <Layout title="Portfolio">
       <div>
