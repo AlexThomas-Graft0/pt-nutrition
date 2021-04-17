@@ -1,8 +1,19 @@
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import Link from "next/link";
 
 export default function Marketing() {
+  const [features, setFeatures] = useState([]);
+  async function fetchFeatures() {
+    const res = await fetch(`http://localhost:3000/api/homeFeatures`);
+    const websiteFeatures = await res.json();
+    setFeatures(websiteFeatures);
+  }
+  useEffect(() => {
+    fetchFeatures();
+  });
+
   return (
     <Layout title="Marketing">
       <div>
@@ -16,7 +27,7 @@ export default function Marketing() {
           marketing and development. We provide the following services:
         </div>
       </div>
-      <Cards />
+      <Cards cardData={features} />
       <div className="text-xl  font-bold m-10">
         Scenario #1: You Already Have A Website
       </div>
