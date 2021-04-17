@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Layout({ children, title }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <main className="flex flex-col items-center justify-center flex-1 text-center">
+      <main className="w-full flex flex-col items-center justify-center flex-1">
         <Head>
           <title>{title}</title>
           <meta charSet="utf-8" />
