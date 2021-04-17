@@ -1,9 +1,9 @@
 import Layout from "../components/Layout";
 
-export default function PersonalTraining() {
+export default function Nutrition() {
   return (
-    <Layout title="Personal Training">
-      <h1>Personal Training</h1>
+    <Layout title="Nutrition">
+      <h1>Nutrition</h1>
     </Layout>
   );
 }

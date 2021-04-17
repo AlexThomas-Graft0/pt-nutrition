@@ -1,9 +1,9 @@
 import Layout from "../components/Layout";
 
-export default function ContentMarketing() {
+export default function Blog() {
   return (
-    <Layout title="Content-Marketing">
-      <h1>Content-Marketing</h1>
+    <Layout title="Blog">
+      <h1>Blog</h1>
     </Layout>
   );
 }

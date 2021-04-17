@@ -4,7 +4,7 @@ import Card from "./Card";
 export default function Cards() {
   const cardData = [
     {
-      link: "pt-nutrition-web-design",
+      link: "web-design",
       icon: "clipboard",
       title: "Websites which work",
       body:
@@ -12,7 +12,7 @@ export default function Cards() {
       subtext: "Learn more about web design",
     },
     {
-      link: "ppc-for-pt-nutrition",
+      link: "PPC",
       icon: "chart",
       title: "Google AdWords Click",
       body:
@@ -20,7 +20,7 @@ export default function Cards() {
       subtext: "Learn more about AdWords",
     },
     {
-      link: "seo-for-pt-nutrition",
+      link: "SEO",
       icon: "seo",
       title: "SEO",
       body:
@@ -35,14 +35,14 @@ export default function Cards() {
       subtext: "Learn more about content writing",
     },
     {
-      link: "online-advertising",
-      icon: "cta",
+      link: "Ads",
+      icon: "chart",
       title: "Online Advertising",
       body: "Target the right person with the right message at the right time.",
       subtext: "Learn more about online ads",
     },
     {
-      link: "social-media",
+      link: "SMM",
       icon: "user",
       title: "Social Media",
       body: "Social media growth to improve credability and gain new clients.",
