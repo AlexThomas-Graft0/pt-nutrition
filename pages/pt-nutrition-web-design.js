@@ -1,24 +1,10 @@
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
-import {
-  LockOpenIcon,
-  ViewListIcon,
-  LightningBoltIcon,
-  FastForwardIcon,
-  SearchIcon,
-  AcademicCapIcon,
-  ClipboardCheckIcon,
-  EyeIcon,
-  HeartIcon,
-  FireIcon,
-  ThumbUpIcon,
-  ChartBarIcon,
-} from "@heroicons/react/outline";
 import Icon from "../components/Icon";
+
 export default function ptNutritionWebDesign() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
@@ -122,7 +108,7 @@ export default function ptNutritionWebDesign() {
             <div
               key={i}
               href="/pt-nutrition-web-design"
-              className="flex flex-col justify-center items-center p-2 border w-1/4 h-20 rounded"
+              className="flex flex-col justify-center items-center p-2 border w-1/3 h-20 rounded"
             >
               <Icon name={name} />
               <div>{text}</div>

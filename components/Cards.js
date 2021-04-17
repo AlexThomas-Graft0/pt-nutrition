@@ -4,7 +4,7 @@ import Card from "./Card";
 export default function Cards() {
   const cardData = [
     {
-      link: "web-design",
+      link: "pt-nutrition-web-design",
       icon: "clipboard",
       title: "Websites which work",
       body:
@@ -55,8 +55,8 @@ export default function Cards() {
   });
 
   return (
-      <div className="flex flex-wrap items-center justify-between space-x-3 max-w-7xl mt-6 sm:w-full">
-        {cards}
-      </div>
+    <div className="flex flex-wrap items-center justify-between space-x-3 max-w-7xl mt-6 sm:w-full">
+      {cards}
+    </div>
   );
 }
