@@ -7,6 +7,9 @@ module.exports = {
         "header-image": "url('/img/header-image.jpg')",
         "web-design-header-image":
           "url('/images/dentist-web-design-background.jpg')",
+        "ppc-laptop": "url('/images/ppc-laptop.png')",
+        "ppc-ab-testing": "url('/images/ppc-laptop-ab-testing.png')",
+        "ppc-management": "url('/images/ppc-management.png')",
       }),
     },
   },
