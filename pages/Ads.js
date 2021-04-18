@@ -24,10 +24,10 @@ export default function Ads() {
         banner={
           <Header
             background="copy-writing-header-image"
-            textColor="gray"
-            textShade="800"
+            heading="Ads"
+            classes="text-gray-800"
           >
-            Copy Writing as Content Marketing for PTS &amp; Nutritionists
+            Online Advertising for PTS &amp; Nutritionists
           </Header>
         }
       >
@@ -60,6 +60,8 @@ export default function Ads() {
                 every second
               </li>
             </ul>
+            You can check out more stats here.
+            <a href="https://www.internetlivestats.com">internet live stats</a>
           </div>
           <div className="flex ">
             <div className="w-96 border rounded mx-2 p-5 text-center shadow-lg">

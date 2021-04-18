@@ -23,11 +23,11 @@ export default function CopyWriting() {
         title="Copy Writing"
         banner={
           <Header
+            heading="Copy Writing"
             background="copy-writing-header-image"
-            textColor="gray"
-            textShade="800"
+            classes="text-gray-800"
           >
-            Copy Writing as Content Marketing for PTS &amp; Nutritionists
+            Content Marketing for PTS &amp; Nutritionists
           </Header>
         }
       >

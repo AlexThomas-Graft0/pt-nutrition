@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
-
+import Header from "../components/header";
 export default function SEO() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
@@ -21,11 +21,13 @@ export default function SEO() {
       <Layout
         title="SEO"
         banner={
-          <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
-            <h1 className="text-5xl font-bold w-1/3">
-              SEO for PT &amp; Nutritionists
-            </h1>
-          </div>
+          <Header
+            heading="SEO"
+            background="header-image"
+            classes="text-gray-50"
+          >
+            SEO for PT &amp; Nutritionists
+          </Header>
         }
       >
         <div className="flex w-full">
