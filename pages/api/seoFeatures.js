@@ -42,7 +42,7 @@ export default function seoFeatures(req, res) {
       // icon: "link-building",
       title: "Link Building",
       body:
-        "Strategic links to your PT & Nutrtionist business will help it rank on Google.",
+        "Strategic links to your PT &amp; Nutrtionist business will help it rank on Google.",
       // subtext: "",
     },
     {
