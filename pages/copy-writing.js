@@ -27,9 +27,7 @@ export default function CopyWriting() {
             textColor="gray"
             textShade="800"
           >
-            <h1 className="text-5xl font-bold">
-              Copy Writing as Content Marketing for PTS &amp; Nutritionists
-            </h1>
+            Copy Writing as Content Marketing for PTS &amp; Nutritionists
           </Header>
         }
       >

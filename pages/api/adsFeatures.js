@@ -1,4 +1,4 @@
-export default function adsFeatures(req, res) {
+export default function copywritingFeatures(req, res) {
   res.status(200).json([
     {
       icon: "security",
