@@ -21,7 +21,7 @@ export default function WebDesign() {
     <>
       <div className="h-96 bg-web-design-header-image bg-contain bg-center flex flex-col justify-center items-center text-gray-800">
         <h1 className="text-5xl font-bold w-1/3 text-center">
-          Web Design and Websites for PTs & Nutritionists
+          Web Design and Websites for PTs &amp; Nutritionists
         </h1>
         <div className="mt-3 text-2xl w-1/2"></div>
       </div>
@@ -33,8 +33,8 @@ export default function WebDesign() {
             results?
           </div>
           <div className="text-xl">
-            How about a website created tailored for PTs & Nutritionists by a
-            team who understands exactly what you're looking for?
+            How about a website created tailored for PTs &amp; Nutritionists by
+            a team who understands exactly what you're looking for?
           </div>
           {/* anchor */}
           {/* grid */}
@@ -82,7 +82,7 @@ export default function WebDesign() {
                   <li>Have The Right Answers</li>
                   <li>Know How You Can Help</li>
                   <li>Know How You Are Unique</li>
-                  <li>See Contact & Location Details</li>
+                  <li>See Contact &amp; Location Details</li>
                 </ul>
                 <div className="text-xs">Learn more about AdWords</div>
               </a>
