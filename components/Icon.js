@@ -13,6 +13,7 @@ import {
   ChartBarIcon,
   UserIcon,
 } from "@heroicons/react/outline";
+
 const icons = [
   {
     name: "security",

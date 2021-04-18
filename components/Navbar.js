@@ -15,7 +15,7 @@ export default function Navbar() {
     "Home",
     "Marketing",
     "Portfolio",
-    "Growth",
+    "Blog",
     "About",
     "Contact",
   ].map((link, key) => {

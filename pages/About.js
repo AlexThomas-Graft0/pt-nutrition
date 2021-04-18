@@ -10,8 +10,8 @@ export default function About() {
       <div className="text-xl w-1/2">
         <div className="mb-10">
           PT/Nutrition Marketing is a digital marketing agency dedicated to
-          growing Pt & Nutrition Businesses. We are focused on results and we
-          are as passionate as you are about growing your business.
+          growing Pt &amp; Nutrition Businesses. We are focused on results and
+          we are as passionate as you are about growing your business.
         </div>
         <div className="mb-10">
           Our team has over 10 years worth of combined experience helping

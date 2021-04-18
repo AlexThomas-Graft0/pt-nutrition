@@ -17,7 +17,7 @@ export default function Footer() {
               Our Work
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/Blog">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Growth Tips
             </a>
