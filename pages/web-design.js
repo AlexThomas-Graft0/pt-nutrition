@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Image from "next/image";
+import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
 import Icon from "../components/Icon";
 
-export default function ptNutritionWebDesign() {
+export default function WebDesign() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
     const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
@@ -63,25 +64,29 @@ export default function ptNutritionWebDesign() {
               <div className="text-xs">Learn more about web design</div>
             </a>
 
-            <a
-              href="/ppc-for-pt-nutrition"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <Image src="/images/ppc.png" alt="ppc" width={250} height={250} />
-              <h3 className="text-xl font-bold">
-                A Website Visitor Would Like To:
-              </h3>
-              <ul className="mt-4">
-                <li>Make a Booking</li>
-                <li>See Social Proof</li>
-                <li>Not Be Confused</li>
-                <li>Have The Right Answers</li>
-                <li>Know How You Can Help</li>
-                <li>Know How You Are Unique</li>
-                <li>See Contact & Location Details</li>
-              </ul>
-              <div className="text-xs">Learn more about AdWords</div>
-            </a>
+            <Link href="PPC">
+              <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
+                <Image
+                  src="/images/ppc.png"
+                  alt="ppc"
+                  width={250}
+                  height={250}
+                />
+                <h3 className="text-xl font-bold">
+                  A Website Visitor Would Like To:
+                </h3>
+                <ul className="mt-4">
+                  <li>Make a Booking</li>
+                  <li>See Social Proof</li>
+                  <li>Not Be Confused</li>
+                  <li>Have The Right Answers</li>
+                  <li>Know How You Can Help</li>
+                  <li>Know How You Are Unique</li>
+                  <li>See Contact & Location Details</li>
+                </ul>
+                <div className="text-xs">Learn more about AdWords</div>
+              </a>
+            </Link>
           </div>
           {/* grid */}
         </div>
@@ -107,7 +112,6 @@ export default function ptNutritionWebDesign() {
           {features.map(({ icon, text, name }, i) => (
             <div
               key={i}
-              href="/pt-nutrition-web-design"
               className="flex flex-col justify-center items-center p-2 border w-1/3 h-20 rounded"
             >
               <Icon name={name} />

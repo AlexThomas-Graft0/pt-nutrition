@@ -9,7 +9,7 @@ export default function Card({ card: { link, icon, title, body, subtext } }) {
         <a>
           <h3 className="text-xl font-bold my-1">{title} &rarr;</h3>
           <p className="mt-4">{body}</p>
-          <div className="text-xs mt-1">{subtext}</div>
+          {subtext && <div className="text-xs mt-1">{subtext}</div>}
         </a>
       </Link>
     </div>

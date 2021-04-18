@@ -16,7 +16,7 @@
 // export default function websiteFeatures(req, res) {
 //   res.status(200).json([
 //     {
-//       icon: <LockOpenIcon class="h-15 w-15 text-green-500" />,
+//       icon: <LockOpenIcon className="h-15 w-15 text-green-500" />,
 //       text: "Secure SSL security",
 //     },
 //     {
