@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 
-export default function Marketing() {
+export default function Contact() {
   return (
     <Layout title="Contatct">
       <ContactForm />

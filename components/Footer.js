@@ -7,32 +7,32 @@ export default function Footer() {
           <div className="text-xs uppercase text-gray-200 font-medium mb-6">
             Services
           </div>
-          <Link href="/marketing-solutions">
+          <Link href="/marketing">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Marketing Solutions
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/Portfolio">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Our Work
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/Blog">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Growth Tips
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/Pricing">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Pricing
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/About">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               About Us
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/Contact">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Contact Us
             </a>
