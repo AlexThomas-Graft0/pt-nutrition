@@ -1,34 +1,20 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
-import Header from "../components/Header";
 
 export default function Ads() {
-  const [features, setFeatures] = useState([]);
-  async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/adsFeatures`);
-    const adsFeatures = await res.json();
-    setFeatures(adsFeatures);
-  }
-  useEffect(() => {
-    fetchFeatures();
-  });
-
   return (
     <>
       <Layout
         title="Ads"
         banner={
-          <Header
-            background="copy-writing-header-image"
-            textColor="gray"
-            textShade="800"
-          >
-            Copy Writing as Content Marketing for PTS &amp; Nutritionists
-          </Header>
+          <div className="h-96 bg-online-ads-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
+            <h1 className="text-5xl font-bold w-1/3">Ads</h1>
+            <div className="mt-3 text-2xl w-1/2">
+              Online Advertising for PTS &amp; Nutritionists
+            </div>
+          </div>
         }
       >
         <div className="flex flex-col space-y-5 justify-start items-center text-xl">
@@ -60,6 +46,8 @@ export default function Ads() {
                 every second
               </li>
             </ul>
+            You can check out more stats here.
+            <a href="https://www.internetlivestats.com">internet live stats</a>
           </div>
           <div className="flex ">
             <div className="w-96 border rounded mx-2 p-5 text-center shadow-lg">

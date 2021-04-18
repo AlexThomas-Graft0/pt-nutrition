@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
-import Header from "../components/Header";
 
 export default function CopyWriting() {
   const [features, setFeatures] = useState([]);
@@ -22,13 +21,12 @@ export default function CopyWriting() {
       <Layout
         title="Copy Writing"
         banner={
-          <Header
-            background="copy-writing-header-image"
-            textColor="gray"
-            textShade="800"
-          >
-            Copy Writing as Content Marketing for PTS &amp; Nutritionists
-          </Header>
+          <div className="h-96 bg-copy-writing-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
+            <h1 className="text-5xl font-bold w-1/3">Copy Writing</h1>
+            <div className="mt-3 text-2xl w-1/2">
+              Content Marketing for PTS &amp; Nutritionists
+            </div>
+          </div>
         }
       >
         <div className="flex flex-col space-y-5 justify-start items-center text-xl">
