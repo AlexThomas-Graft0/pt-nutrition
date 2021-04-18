@@ -7,7 +7,7 @@ export default function Portfolio() {
     <Layout title="Portfolio">
       <div>
         <div className="text-3xl font-bold text-center justify-center m-5 ">
-          Our Work for PTs & Nutritionists
+          Our Work for PTs &amp; Nutritionists
         </div>
         <div className="text-xl text-center justify-center m-5">
           Finding the right marketing agency is not easy... there are so many

@@ -5,7 +5,7 @@ export default function Growth() {
   return (
     <Layout title="Growth">
       <div className="text-3xl font-bold text-center justify-center m-5 ">
-        Growth Advice for PTs & Nutritionists
+        Growth Advice for PTs &amp; Nutritionists
       </div>
 
       <div className="w-full flex justify-around items-center p-5 my-5">

@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Card from "./Card";
 
-export default function Cards({ cardData }) {
+export default function Cards({ cardData, classes }) {
   // const cardData = [
   //   {
   //     link: "web-design",
@@ -55,7 +55,9 @@ export default function Cards({ cardData }) {
   });
 
   return (
-    <div className="flex flex-wrap items-center justify-between space-x-3 max-w-7xl mt-6 sm:w-full">
+    <div
+      className={`flex flex-wrap items-center justify-around max-w-7xl mt-6 sm:w-full ${classes}`}
+    >
       {cards}
     </div>
   );
