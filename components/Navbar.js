@@ -39,8 +39,8 @@ export default function Navbar() {
         <Link href={link == "Home" ? "/" : `/${link}`}>
           <a
             className={`${
-              setActiveClasses(link) ? "font-bold text-xl " : ""
-            } inline-block px-4 py-2 text-black-100 hover:text-white`}
+              setActiveClasses(link) ? "font-bold text-xl text-white " : ""
+            } inline-block px-4 py-2 text-gray-200 hover:text-white`}
           >
             {link}
           </a>
