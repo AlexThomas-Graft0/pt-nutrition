@@ -51,7 +51,7 @@ export default function Home() {
           <span className="font-bold">PT Nutrition Marketing</span> has a
           dedicated team of expert marketers focused on helping personal
           trainers and nutritionists get more clients via and consulting.
-          <Link href="/marketing-solutions">
+          <Link href="/marketing">
             <a>Find out more &rarr;</a>
           </Link>
         </div>
