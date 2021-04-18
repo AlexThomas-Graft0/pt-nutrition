@@ -25,7 +25,7 @@ export default function seoFeatures(req, res) {
       subtext: "Learn more about web SEO",
     },
     {
-      link: "content-marketing",
+      link: "copy-writing",
       icon: "services",
       title: "Content Writing",
       body: "Our writers are highly-skilled communicators and persuaders.",
