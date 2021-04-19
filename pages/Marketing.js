@@ -1,13 +1,24 @@
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import Link from "next/link";
 
 export default function Marketing() {
+  const [features, setFeatures] = useState([]);
+  async function fetchFeatures() {
+    const res = await fetch(`/api/homeFeatures`);
+    const websiteFeatures = await res.json();
+    setFeatures(websiteFeatures);
+  }
+  useEffect(() => {
+    fetchFeatures();
+  });
+
   return (
     <Layout title="Marketing">
       <div>
         <div className="text-3xl font-bold m-5 ">
-          Online Marketing Solutions for PTs & Nutritionists
+          Online Marketing Solutions for PTs &amp; Nutritionists
         </div>
         <div className="text-xl ">
           Finding the right marketing company among the multitude of choices
@@ -16,7 +27,7 @@ export default function Marketing() {
           marketing and development. We provide the following services:
         </div>
       </div>
-      <Cards />
+      <Cards cardData={features} />
       <div className="text-xl  font-bold m-10">
         Scenario #1: You Already Have A Website
       </div>
@@ -32,7 +43,7 @@ export default function Marketing() {
       </div>
       <div className="text-xl text-center justify-center mb-5">
         If you don't currently have a website, it's extremely important to have
-        one in this competitive market. All credible Pts & Nutrtionists have
+        one in this competitive market. All credible Pts &amp; Nutrtionists have
         effective websites that showcase their expertise and experience and it
         results in more clients and higher profits.
       </div>

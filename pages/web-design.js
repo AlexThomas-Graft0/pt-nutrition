@@ -4,25 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
-import {
-  LockOpenIcon,
-  ViewListIcon,
-  LightningBoltIcon,
-  FastForwardIcon,
-  SearchIcon,
-  AcademicCapIcon,
-  ClipboardCheckIcon,
-  EyeIcon,
-  HeartIcon,
-  FireIcon,
-  ThumbUpIcon,
-  ChartBarIcon,
-} from "@heroicons/react/outline";
 import Icon from "../components/Icon";
-export default function ptNutritionWebDesign() {
+
+export default function WebDesign() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+    const res = await fetch(`/api/websiteFeatures`);
     const websiteFeatures = await res.json();
     setFeatures(websiteFeatures);
   }
@@ -34,7 +21,7 @@ export default function ptNutritionWebDesign() {
     <>
       <div className="h-96 bg-web-design-header-image bg-contain bg-center flex flex-col justify-center items-center text-gray-800">
         <h1 className="text-5xl font-bold w-1/3 text-center">
-          Web Design and Websites for PTs & Nutritionists
+          Web Design and Websites for PTs &amp; Nutritionists
         </h1>
         <div className="mt-3 text-2xl w-1/2"></div>
       </div>
@@ -46,8 +33,8 @@ export default function ptNutritionWebDesign() {
             results?
           </div>
           <div className="text-xl">
-            How about a website created tailored for PTs & Nutritionists by a
-            team who understands exactly what you're looking for?
+            How about a website created tailored for PTs &amp; Nutritionists by
+            a team who understands exactly what you're looking for?
           </div>
           {/* anchors */}
           {/* grid */}
@@ -77,25 +64,29 @@ export default function ptNutritionWebDesign() {
               <div className="text-xs">Learn more about web design</div>
             </a>
 
-            <a
-              href="/ppc-for-pt-nutrition"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <Image src="/images/ppc.png" alt="ppc" width={250} height={250} />
-              <h3 className="text-xl font-bold">
-                A Website Visitor Would Like To:
-              </h3>
-              <ul className="mt-4">
-                <li>Make a Booking</li>
-                <li>See Social Proof</li>
-                <li>Not Be Confused</li>
-                <li>Have The Right Answers</li>
-                <li>Know How You Can Help</li>
-                <li>Know How Are Unique</li>
-                <li>See Contact & Location Details</li>
-              </ul>
-              <div className="text-xs">Learn more about AdWords</div>
-            </a>
+            <Link href="PPC">
+              <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
+                <Image
+                  src="/images/ppc.png"
+                  alt="ppc"
+                  width={250}
+                  height={250}
+                />
+                <h3 className="text-xl font-bold">
+                  A Website Visitor Would Like To:
+                </h3>
+                <ul className="mt-4">
+                  <li>Make a Booking</li>
+                  <li>See Social Proof</li>
+                  <li>Not Be Confused</li>
+                  <li>Have The Right Answers</li>
+                  <li>Know How You Can Help</li>
+                  <li>Know How You Are Unique</li>
+                  <li>See Contact &amp; Location Details</li>
+                </ul>
+                <div className="text-xs">Learn more about AdWords</div>
+              </a>
+            </Link>
           </div>
           {/* grid */}
         </div>
@@ -121,8 +112,7 @@ export default function ptNutritionWebDesign() {
           {features.map(({ icon, text, name }, i) => (
             <div
               key={i}
-              href="/pt-nutrition-web-design"
-              className="flex flex-col justify-center items-center p-2 border w-1/4 h-20 rounded"
+              className="flex flex-col justify-center items-center p-2 border w-1/3 h-20 rounded"
             >
               <Icon name={name} />
               <div>{text}</div>
@@ -142,7 +132,7 @@ export default function ptNutritionWebDesign() {
 }
 
 // export async function getStaticProps(context) {
-//   const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+//   const res = await fetch(`/api/websiteFeatures`);
 //   // const websiteFeatures = await res.json();
 //   const websiteFeatures = await res.json();
 

@@ -1,12 +1,24 @@
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import Link from "next/link";
+import Icon from "../components/Icon";
 
 export default function Home() {
+  const [features, setFeatures] = useState([]);
+  async function fetchFeatures() {
+    const res = await fetch(`/api/homeFeatures`);
+    const websiteFeatures = await res.json();
+    setFeatures(websiteFeatures);
+  }
+  useEffect(() => {
+    fetchFeatures();
+  });
+
   return (
     <>
-      <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white">
-        <h1 className="text-5xl font-bold w-1/3 text-center">
+      <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
+        <h1 className="text-5xl font-bold w-1/3">
           Do you want to grow your PT or Nutrition Business?
         </h1>
         <div className="mt-3 text-2xl w-1/2">
@@ -16,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       <Layout title="Home">
-        <Cards />
+        <Cards cardData={features} />
         {/* banner */}
         <div className="flex justify-center items-center text-3xl p-3 my-3 md:h-20">
           We focus on getting you more clients, while you focus on running your
@@ -39,7 +51,7 @@ export default function Home() {
           <span className="font-bold">PT Nutrition Marketing</span> has a
           dedicated team of expert marketers focused on helping personal
           trainers and nutritionists get more clients via and consulting.
-          <Link href="/marketing-solutions">
+          <Link href="/marketing">
             <a>Find out more &rarr;</a>
           </Link>
         </div>
