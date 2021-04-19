@@ -36,7 +36,7 @@ export default function WebDesign() {
             How about a website created tailored for PTs &amp; Nutritionists by
             a team who understands exactly what you're looking for?
           </div>
-          {/* anchor */}
+          {/* anchors */}
           {/* grid */}
           <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
             <a
@@ -53,7 +53,7 @@ export default function WebDesign() {
                 A PT or Nutritionist Would Like To:
               </h3>
               <ul className="mt-4">
-                <li>Go On Holiday 😉</li>
+                <li>Go On Holiday</li>
                 <li>Be Fully Booked</li>
                 <li>Get More Clients</li>
                 <li>Have a Waiting List</li>
