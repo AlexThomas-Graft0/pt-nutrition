@@ -10,7 +10,7 @@ export default function seoFeatures(req, res) {
     },
     {
       link: "PPC",
-      icon: "chart",
+      icon: "pie-chart",
       title: "Google AdWords Click",
       body:
         "We aim to get you the best results and land you leads through targets ads.",
@@ -26,14 +26,14 @@ export default function seoFeatures(req, res) {
     },
     {
       link: "copy-writing",
-      icon: "services",
-      title: "Content Writing",
+      icon: "book",
+      title: "Copy Writing",
       body: "Our writers are highly-skilled communicators and persuaders.",
-      subtext: "Learn more about content writing",
+      subtext: "Learn more about copy writing",
     },
     {
       link: "Ads",
-      icon: "chart",
+      icon: "eye",
       title: "Online Advertising",
       body: "Target the right person with the right message at the right time.",
       subtext: "Learn more about online ads",
