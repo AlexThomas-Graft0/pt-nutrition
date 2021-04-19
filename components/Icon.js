@@ -82,8 +82,11 @@ const icons = [
 ];
 
 export default function Icon({ name }) {
-  const { icon } = icons.find((i) => i.name === name);
-  return icon;
+  if (icons.find((i) => i.name === name)) {
+    const { icon } = icons.find((i) => i.name === name);
+    return icon;
+  }
+  return null;
 }
 
 // export default icons;

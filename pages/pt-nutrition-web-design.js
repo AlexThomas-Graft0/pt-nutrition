@@ -66,7 +66,7 @@ export default function ptNutritionWebDesign() {
                 A PT or Nutritionist Would Like To:
               </h3>
               <ul className="mt-4">
-                <li>Go On Holiday 😉</li>
+                <li>Go On Holiday</li>
                 <li>Be Fully Booked</li>
                 <li>Get More Clients</li>
                 <li>Have a Waiting List</li>
@@ -91,7 +91,7 @@ export default function ptNutritionWebDesign() {
                 <li>Not Be Confused</li>
                 <li>Have The Right Answers</li>
                 <li>Know How You Can Help</li>
-                <li>Know How You Are Unique</li>
+                <li>Know How Are Unique</li>
                 <li>See Contact & Location Details</li>
               </ul>
               <div className="text-xs">Learn more about AdWords</div>
