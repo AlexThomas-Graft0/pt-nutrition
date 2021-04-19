@@ -7,7 +7,7 @@ import FreeAnalysis from "../components/FreeAnalysis";
 export default function SEO() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/seoFeatures`);
+    const res = await fetch(`/api/seoFeatures`);
     const seoFeatures = await res.json();
     setFeatures(seoFeatures);
   }

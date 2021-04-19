@@ -8,7 +8,7 @@ import Cards from "../components/Cards";
 export default function PPC() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/ppcFeatures`);
+    const res = await fetch(`/api/ppcFeatures`);
     const websiteFeatures = await res.json();
     setFeatures(websiteFeatures);
   }

@@ -8,7 +8,7 @@ import FreeAnalysis from "../components/FreeAnalysis";
 export default function CopyWriting() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/copywritingFeatures`);
+    const res = await fetch(`/api/copywritingFeatures`);
     const copywritingFeatures = await res.json();
     setFeatures(copywritingFeatures);
   }

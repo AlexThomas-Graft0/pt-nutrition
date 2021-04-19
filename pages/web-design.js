@@ -9,7 +9,7 @@ import Icon from "../components/Icon";
 export default function WebDesign() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+    const res = await fetch(`/api/websiteFeatures`);
     const websiteFeatures = await res.json();
     setFeatures(websiteFeatures);
   }
@@ -132,7 +132,7 @@ export default function WebDesign() {
 }
 
 // export async function getStaticProps(context) {
-//   const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+//   const res = await fetch(`/api/websiteFeatures`);
 //   // const websiteFeatures = await res.json();
 //   const websiteFeatures = await res.json();
 

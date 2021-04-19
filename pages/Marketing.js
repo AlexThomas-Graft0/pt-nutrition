@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Marketing() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/homeFeatures`);
+    const res = await fetch(`/api/homeFeatures`);
     const websiteFeatures = await res.json();
     setFeatures(websiteFeatures);
   }
