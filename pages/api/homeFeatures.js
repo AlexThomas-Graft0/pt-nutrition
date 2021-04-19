@@ -2,7 +2,7 @@ export default function seoFeatures(req, res) {
   res.status(200).json([
     {
       link: "web-design",
-      icon: "clipboard",
+      icon: "board-chart",
       title: "Websites which work",
       body:
         "We don't just create websites. We create websites that get results.",
@@ -10,7 +10,7 @@ export default function seoFeatures(req, res) {
     },
     {
       link: "PPC",
-      icon: "pie-chart",
+      icon: "click",
       title: "Google AdWords Click",
       body:
         "We aim to get you the best results and land you leads through targets ads.",
@@ -26,7 +26,7 @@ export default function seoFeatures(req, res) {
     },
     {
       link: "copy-writing",
-      icon: "book",
+      icon: "pencil",
       title: "Copy Writing",
       body: "Our writers are highly-skilled communicators and persuaders.",
       subtext: "Learn more about copy writing",
@@ -40,7 +40,7 @@ export default function seoFeatures(req, res) {
     },
     {
       link: "SMM",
-      icon: "user",
+      icon: "share",
       title: "Social Media",
       body: "Social media growth to improve credability and gain new clients.",
       subtext: "Learn more about social media",

@@ -14,6 +14,14 @@ import {
   UserIcon,
   ChartPieIcon,
   BookOpenIcon,
+  DesktopComputerIcon,
+  CursorClickIcon,
+  SearchCircleIcon,
+  PencilAltIcon,
+  UserGroupIcon,
+  PresentationChartBarIcon,
+  PresentationChartLineIcon,
+  ShareIcon,
 } from "@heroicons/react/outline";
 
 const icons = [
@@ -77,8 +85,35 @@ const icons = [
     name: "book",
     icon: <BookOpenIcon className="h-10 w-10 text-green-500" />,
   },
+  {
+    name: "computer",
+    icon: <DesktopComputerIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "click",
+    icon: <CursorClickIcon className="h-10 w-10 text-green-500" />,
+  },
 
-
+  {
+    name: "search-circle",
+    icon: <SearchCircleIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "pencil",
+    icon: <PencilAltIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "user-group",
+    icon: <UserGroupIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "board-chart",
+    icon: <PresentationChartLineIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "share",
+    icon: <ShareIcon className="h-10 w-10 text-green-500" />,
+  },
 ];
 
 export default function Icon({ name }) {
