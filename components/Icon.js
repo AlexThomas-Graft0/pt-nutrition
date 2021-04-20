@@ -27,6 +27,10 @@ import {
   TemplateIcon,
   ChartSquareBarIcon,
   BeakerIcon,
+  DocumentSearchIcon,
+  CodeIcon,
+  LinkIcon,
+  NewspaperIcon,
 } from "@heroicons/react/outline";
 
 const icons = [
@@ -138,6 +142,22 @@ const icons = [
   {
     name: "beaker",
     icon: <BeakerIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "document-search",
+    icon: <DocumentSearchIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "code",
+    icon: <CodeIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "link",
+    icon: <LinkIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "newspaper",
+    icon: <NewspaperIcon className="h-10 w-10 text-green-500" />,
   },
 ];
 
