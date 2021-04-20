@@ -22,6 +22,11 @@ import {
   PresentationChartBarIcon,
   PresentationChartLineIcon,
   ShareIcon,
+  RefreshIcon,
+  CurrencyPoundIcon,
+  TemplateIcon,
+  ChartSquareBarIcon,
+  BeakerIcon,
 } from "@heroicons/react/outline";
 
 const icons = [
@@ -113,6 +118,26 @@ const icons = [
   {
     name: "share",
     icon: <ShareIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "refresh",
+    icon: <RefreshIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "pound",
+    icon: <CurrencyPoundIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "template",
+    icon: <TemplateIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "chart-square-bar",
+    icon: <ChartSquareBarIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "beaker",
+    icon: <BeakerIcon className="h-10 w-10 text-green-500" />,
   },
 ];
 
