@@ -93,12 +93,12 @@ export default function WebDesign() {
         {/* image */}
         <div className="flex flex-col justify-center items-center my-3">
           <Image
-            src="/images/dentist-web-design.jpg"
+            src="/images/web_design_image.jpg"
             alt="ppc"
-            width={740}
-            height={440}
+            width={1050}
+            height={600}
           />
-          <div className="mt-3">
+          <div className="mt-10">
             We create effective websites that are perfect for your business and
             the website visitor.
             <br />

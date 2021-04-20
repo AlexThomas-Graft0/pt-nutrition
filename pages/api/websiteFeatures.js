@@ -33,7 +33,7 @@ export default function websiteFeatures(req, res) {
       text: "Multiple case studies and testimonials",
     },
     {
-      name: "heart",
+      name: "computer",
       text: "A professional, well-designed appearance",
     },
     {
@@ -45,7 +45,7 @@ export default function websiteFeatures(req, res) {
       text: "Social media engagement and growth",
     },
     {
-      name: "chart",
+      name: "pie-chart",
       text: "Analyzing the data for improvement",
     },
   ]);
