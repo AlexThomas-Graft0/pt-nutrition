@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
+import BannerBottom from "../components/BannerBottom";
 
 export default function About() {
   return (
@@ -28,18 +29,7 @@ export default function About() {
         We focus on getting you more clients, while you focus on running your
         business.
       </div>
-      <div className="w-full flex justify-around items-center p-5 my-5">
-        <Link href="/Contact">
-          <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
-            Contact
-          </a>
-        </Link>
-        <Link href="/Contact">
-          <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
-            Free Consultation
-          </a>
-        </Link>
-      </div>
+      <BannerBottom />
     </Layout>
   );
 }

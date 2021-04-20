@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import FreeAnalysis from "../components/FreeAnalysis";
 import Link from "next/link";
+import BannerBottom from "../components/BannerBottom";
 
 export default function Portfolio() {
   return (
@@ -29,18 +30,7 @@ export default function Portfolio() {
           to get more clients.
         </div>
       </div>
-      <div className="w-full flex justify-around items-center p-5 my-5">
-        <Link href="/Contact">
-          <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
-            Contact
-          </a>
-        </Link>
-        <Link href="/Contact">
-          <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
-            Free Consultation
-          </a>
-        </Link>
-      </div>
+      <BannerBottom />
     </Layout>
   );
 }
