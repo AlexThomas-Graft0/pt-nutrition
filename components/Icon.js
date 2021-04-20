@@ -31,6 +31,11 @@ import {
   CodeIcon,
   LinkIcon,
   NewspaperIcon,
+  BadgeCheckIcon,
+  EmojiHappyIcon,
+  ShieldCheckIcon,
+  SpeakerphoneIcon,
+  BriefcaseIcon,
 } from "@heroicons/react/outline";
 
 const icons = [
@@ -158,6 +163,30 @@ const icons = [
   {
     name: "newspaper",
     icon: <NewspaperIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "acedemic",
+    icon: <AcademicCapIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "badge",
+    icon: <BadgeCheckIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "happy",
+    icon: <EmojiHappyIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "shield",
+    icon: <ShieldCheckIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "speakerphone",
+    icon: <SpeakerphoneIcon className="h-10 w-10 text-green-500" />,
+  },
+  {
+    name: "briefcase",
+    icon: <BriefcaseIcon className="h-10 w-10 text-green-500" />,
   },
 ];
 
