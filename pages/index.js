@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import Link from "next/link";
-import Icon from "../components/Icon";
+import BannerBottom from "../components/BannerBottom";
 
 export default function Home() {
   const [features, setFeatures] = useState([]);
@@ -135,18 +135,7 @@ export default function Home() {
         </div>
         {/* blog */}
         {/* Banner */}
-        <div className="w-full flex justify-around items-center p-5 my-5">
-          <Link href="/Contact">
-            <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
-              Contact
-            </a>
-          </Link>
-          <Link href="/Contact">
-            <a className="bg-green-400 hover:bg-green-300 text-s px-2 py-1 rounded">
-              Free Consultation
-            </a>
-          </Link>
-        </div>
+        <BannerBottom />
         {/* Banner */}
       </Layout>
     </>

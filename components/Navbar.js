@@ -51,16 +51,16 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full flex justify-between items-center p-5 my-3">
-        <Button color="green" rounded>
-          <Link href="/Contact">
-            <a>Contact</a>
-          </Link>
-        </Button>
-        <Button color="green" rounded>
-          <Link href="/Contact">
-            <a>Free Consultation</a>
-          </Link>
-        </Button>
+        <Link href="/Contact">
+          <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
+            Contact
+          </a>
+        </Link>
+        <Link href="/Contact">
+          <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
+            Free Consultation
+          </a>
+        </Link>
       </div>
       <nav className={`text-white lg:bg-opacity-90 lg:bg-green-500 py-2`}>
         <div className="container flex flex-wrap items-center justify-between w-full mx-auto mt-0">

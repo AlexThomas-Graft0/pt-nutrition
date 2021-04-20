@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
 import Cards from "../components/Cards";
+import BannerBottom from "../components/BannerBottom";
 
 export default function PPC() {
   const [features, setFeatures] = useState([]);
