@@ -44,10 +44,10 @@ export default function WebDesign() {
               className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
             >
               <Image
-                src="/images/website.png"
+                src="/images/placeholder1.jpg"
                 alt="websites"
-                width={250}
-                height={250}
+                width={300}
+                height={300}
               />
               <h3 className="text-xl font-bold">
                 A PT or Nutritionist Would Like To:
@@ -67,10 +67,10 @@ export default function WebDesign() {
             <Link href="PPC">
               <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
                 <Image
-                  src="/images/ppc.png"
+                  src="/images/placeholder2.jpg"
                   alt="ppc"
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={300}
                 />
                 <h3 className="text-xl font-bold">
                   A Website Visitor Would Like To:
