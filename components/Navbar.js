@@ -50,7 +50,7 @@ export default function Navbar() {
   });
   return (
     <>
-      <div className="w-full flex justify-between items-center p-5 my-3">
+      <div className="w-full hidden md:flex justify-between items-center p-5 my-3">
         <Link href="/Contact">
           <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
             Contact
@@ -90,7 +90,7 @@ export default function Navbar() {
           <div
             className={`${
               isOpen ? "" : "hidden"
-            } z-20 flex-grow w-full p-4 mt-2 text-xl text-gray-600 bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
+            } z-20 flex-grow w-full p-4 mt-2 text-xl text-gray-300 bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
             id="nav-content"
           >
             <ul className="items-center justify-end flex-1 list-reset lg:flex">
