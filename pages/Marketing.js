@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
-import Link from "next/link";
 import BannerBottom from "../components/BannerBottom";
 
 export default function Marketing() {

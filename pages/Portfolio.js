@@ -1,7 +1,6 @@
 import Layout from "../components/Layout";
 import FreeAnalysis from "../components/FreeAnalysis";
 import BannerBottom from "../components/BannerBottom";
-import { useState, useEffect } from "react";
 
 export default function Portfolio() {
   return (
