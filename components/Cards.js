@@ -7,7 +7,7 @@ export default function Cards({ cardData, classes }) {
 
   return (
     <div
-      className={`flex flex-wrap items-center justify-around w-screen md:mt-6 bg-gray-50 md:p-5 ${classes}`}
+      className={`flex flex-wrap items-center justify-around w-full md:mt-6 bg-gray-50 md:p-5 ${classes}`}
     >
       {cards}
     </div>
