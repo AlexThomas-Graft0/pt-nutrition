@@ -4,7 +4,12 @@ import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
-    <Layout title="Contatct">
+    <Layout
+      title="Contatct"
+      banner={
+        <div className="h-96 bg-contact-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center"></div>
+      }
+    >
       <ContactForm />
       <div>
         <div className="m-5">To email a specific department:</div>
