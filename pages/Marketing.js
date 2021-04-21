@@ -20,23 +20,15 @@ export default function Marketing() {
       <Layout
         title="Marketing"
         banner={
-          <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
+          <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
             <h1 className="text-5xl font-bold w-1/3">
-              Do you want to grow your PT or Nutrition Business?
+              Online Marketing Solutions for PTs & Nutritionists
             </h1>
-            <div className="mt-3 text-2xl w-1/2">
-              With industry knowledge and the benefit of specialising in
-              websites for PTs and Nutritions, we know exactly what works and
-              how to grow your business.
-            </div>
           </div>
         }
       >
         <div>
-          <div className="text-3xl text-center justify-center font-bold m-5 ">
-            Online Marketing Solutions for PTs &amp; Nutritionists
-          </div>
-          <div className="text-xl ">
+          <div className="text-xl mt-3 text-center">
             Finding the right marketing company among the multitude of choices
             available is not easy. For this reason we specialize in PTs and
             Nutrition Businesses. We aquire clients through effective online
@@ -44,7 +36,7 @@ export default function Marketing() {
           </div>
         </div>
         <Cards cardData={features} />
-        <div className="text-xl text-center justify-center font-bold m-10">
+        <div className="text-xl text-center justify-center font-bold">
           Scenario #1: You Already Have A Website
         </div>
         <div className="text-xl ">

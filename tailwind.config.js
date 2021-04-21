@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "header-image": "url('/img/header-image.jpg')",
+        "header-image": "url('/images/home-header2.jpg')", //opacity in ps is 40%
         "web-design-header-image":
           "url('/images/dentist-web-design-background.jpg')",
         "copy-writing-header-image":

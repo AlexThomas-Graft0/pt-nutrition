@@ -8,7 +8,7 @@ export default function Cards({ cardData, classes }) {
 
   return (
     <div
-      className={`flex flex-wrap items-center justify-around max-w-7xl mt-6 sm:w-full ${classes}`}
+      className={`flex flex-wrap items-center justify-around max-w-7xl sm:w-full ${classes}`}
     >
       {cards}
     </div>
