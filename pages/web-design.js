@@ -19,13 +19,16 @@ export default function WebDesign() {
 
   return (
     <>
-      <div className="h-96 bg-web-design-header-image bg-contain bg-center flex flex-col justify-center items-center text-gray-800">
-        <h1 className="text-5xl font-bold w-1/3 text-center">
-          Web Design and Websites for PTs &amp; Nutritionists
-        </h1>
-        <div className="mt-3 text-2xl w-1/2"></div>
-      </div>
-      <Layout title="Home">
+      <Layout
+        title="Home"
+        banner={
+          <div className="h-96 bg-web-design-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+            <h1 className="text-5xl font-bold w-1/3">
+              Web Design For PTs &amp; Nutritionalists
+            </h1>
+          </div>
+        }
+      >
         <div className="flex flex-col justify-center items-center px-3 py-5 my-3 space-y-5 w-full text-gray-700">
           {/* anchor */}
           <div className="text-3xl">
