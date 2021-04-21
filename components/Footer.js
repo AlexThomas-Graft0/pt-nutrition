@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="text-xs uppercase text-gray-200 font-medium mb-6">
             Services
           </div>
-          <Link href="/marketing">
+          <Link href="/Marketing">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Marketing Solutions
             </a>
@@ -19,7 +19,7 @@ export default function Footer() {
           </Link>
           <Link href="/Blog">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
-              Growth Tips
+              Blog
             </a>
           </Link>
           <Link href="/Pricing">
@@ -48,12 +48,12 @@ export default function Footer() {
           <div className="text-xs uppercase text-gray-200 font-medium mb-6">
             Legal
           </div>
-          <Link href="/privacy-policy">
+          <Link href="/Privacy-Policy">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Privacy Policy
             </a>
           </Link>
-          <Link href="/terms">
+          <Link href="/Terms">
             <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
               Terms &amp; Conditions
             </a>
