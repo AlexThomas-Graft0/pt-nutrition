@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+      <div className="h-96 bg-cover bg-center bg-index-header-image flex flex-col justify-center items-center text-black text-center">
         <h1 className="text-5xl font-bold w-1/3">
           Do you want to grow your PT or Nutrition Business?
         </h1>

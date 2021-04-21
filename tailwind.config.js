@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "header-image": "url('/images/home-header2.jpg')", //opacity in ps is 40%
+        "index-header-image": "url('/images/home-header.jpg')",
+        "marketing-header-image": "url('/images/marketing-header.jpg')",
         "web-design-header-image":
           "url('/images/dentist-web-design-background.jpg')",
         "copy-writing-header-image":
@@ -16,6 +17,7 @@ module.exports = {
         "ppc-laptop": "url('/images/ppc-laptop.png')",
         "ppc-ab-testing": "url('/images/ppc-laptop-ab-testing.png')",
         "ppc-management": "url('/images/ppc-management.png')",
+        "portfolio-header-image": "url('/images/portfolio_header.jpg')",
       }),
     },
   },
