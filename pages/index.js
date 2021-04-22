@@ -15,7 +15,7 @@ export default function Home() {
   }
   useEffect(() => {
     fetchFeatures();
-  });
+  }, []);
 
   <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
     <h1 className="text-5xl font-bold w-1/3">

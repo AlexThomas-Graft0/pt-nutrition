@@ -15,7 +15,7 @@ export default function WebDesign() {
   }
   useEffect(() => {
     fetchFeatures();
-  });
+  }, []);
 
   return (
     <>

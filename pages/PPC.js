@@ -15,7 +15,7 @@ export default function PPC() {
   }
   useEffect(() => {
     fetchFeatures();
-  });
+  }, []);
 
   return (
     <>

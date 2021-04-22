@@ -13,7 +13,7 @@ export default function SEO() {
   }
   useEffect(() => {
     fetchFeatures();
-  });
+  }, []);
 
   return (
     <>
