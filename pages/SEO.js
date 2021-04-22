@@ -28,9 +28,9 @@ export default function SEO() {
           </div>
         }
       >
-        <div className="flex w-full">
+        <div className="flex flex-col md:flex-row w-full">
           <Image src="/images/ptseo.PNG" width={761 * 2} height={944 * 2} />
-          <div className="flex flex-col space-y-5 justify-start items-center w-1/2 text-xl">
+          <div className="container p-5 text-center flex flex-col space-y-5 justify-center items-center md:w-1/2 text-xl">
             <h2 className="text-3xl font-bold my-2 p-3">What is SEO?</h2>
             <h3 className="text-2xl font-semibold">
               SEO. Search Engine Optimization.
@@ -85,11 +85,11 @@ export default function SEO() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-semibold text-center mt-3">
+          <h3 className="text-2xl px-3 font-semibold text-center mt-3">
             How We Grow Your business With SEO:
           </h3>
           <Cards cardData={features} classes="max-w-9xl" />
-          <div className="w-full flex justify-around items-center mt-3">
+          <div className="w-full flex flex-col md:flex-row justify-around items-center mt-3">
             <ContactForm />
             <FreeAnalysis />
           </div>
