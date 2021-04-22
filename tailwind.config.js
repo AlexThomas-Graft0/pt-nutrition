@@ -11,7 +11,7 @@ module.exports = {
         "contact-header-image": "url('/images/contact-header.jpg')",
         "web-design-header-image": "url('/images/web-design-header.jpg')",
         "copy-writing-header-image": "url('/images/copy-writing-header.jpg')",
-        "ads-header-image": "url('/images/social-media-header.jpg')",
+        "ads-header-image": "url('/images/ads-header.jpg')",
         "seo-header-image": "url('/images/seo-header.jpg')",
         "smm-header-image": "url('/images/social-media-header.jpg')",
         "ppc-header-image": "url('/images/ppc-header.jpg')",
