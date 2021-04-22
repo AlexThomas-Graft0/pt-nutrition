@@ -23,7 +23,7 @@ export default function PPC() {
         title="PPC"
         banner={
           <div className="h-96 bg-ppc-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
-            <h1 className="text-5xl font-bold w-1/3">
+            <h1 className="text-5xl font-bold w-1/3 text-gray-800">
               Effective PPC (AdWords) for PT &amp; Nutritionists
             </h1>
           </div>

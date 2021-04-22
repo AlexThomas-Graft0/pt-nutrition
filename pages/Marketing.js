@@ -19,7 +19,7 @@ export default function Marketing() {
       <Layout
         title="Marketing"
         banner={
-          <div className="h-96 bg-marketing-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+          <div className="h-96 bg-marketing-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
             <h1 className="text-5xl font-bold w-1/3">
               Online Marketing Solutions for PTs & Nutritionists
             </h1>
