@@ -19,16 +19,24 @@ export default function PPC() {
 
   return (
     <>
-      <div className="h-96 bg-ppc-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
-        <h1 className="text-5xl font-bold w-1/3">
-          Effective PPC (AdWords) for PT &amp; Nutritionists
-        </h1>
-        <div className="mt-3 text-2xl w-1/2">
-          We help PTs and Nutitions get more clients through effective PPC
-          marketing and conversion centered landing-page design.
+      <Layout
+        title="PPC"
+        banner={
+          <div className="h-96 bg-ppc-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+            <h1 className="text-5xl font-bold w-1/3">
+              Effective PPC (AdWords) for PT &amp; Nutritionists
+            </h1>
+          </div>
+        }
+      >
+        <div>
+          <div className="text-xl mt-3 text-center">
+            Finding the right marketing company among the multitude of choices
+            available is not easy. For this reason we specialize in PTs and
+            Nutrition Businesses. We aquire clients through effective online
+            marketing and development. We provide the following services:
+          </div>
         </div>
-      </div>
-      <Layout title="PPC">
         <div className="w-full flex flex-col space-y-2 justify-center">
           <div className="w-full p-3 flex flex-wrap justify-center">
             <div className="w-80 h-80 bg-contain bg-center bg-ppc-laptop">

@@ -34,7 +34,7 @@ export default function Home() {
       <Layout
         title="Home"
         banner={
-          <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
+          <div className="h-96 bg-index-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
             <h1 className="text-xl md:text-5xl font-bold md:w-1/3">
               Do you want to grow your PT or Nutrition Business?
             </h1>

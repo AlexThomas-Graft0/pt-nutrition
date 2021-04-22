@@ -8,37 +8,37 @@ export default function Footer() {
             Services
           </div>
           <Link href="/Marketing">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Marketing Solutions
             </a>
           </Link>
           <Link href="/Portfolio">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Our Work
             </a>
           </Link>
           <Link href="/Blog">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Blog
             </a>
           </Link>
           <Link href="/Pricing">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Pricing
             </a>
           </Link>
           <Link href="/About">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               About Us
             </a>
           </Link>
           <Link href="/Contact">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Contact Us
             </a>
           </Link>
           <Link href="/">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700"></a>
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500"></a>
           </Link>
         </div>
 
@@ -49,12 +49,12 @@ export default function Footer() {
             Legal
           </div>
           <Link href="/Privacy-Policy">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Privacy Policy
             </a>
           </Link>
           <Link href="/Terms">
-            <a className="my-3 block text-gray-300 hover:text-white text-sm font-medium duration-700">
+            <a className="my-3 block text-gray-200 hover:text-white text-sm font-medium duration-500">
               Terms &amp; Conditions
             </a>
           </Link>
