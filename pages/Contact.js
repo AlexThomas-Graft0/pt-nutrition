@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 
 export default function Contact() {

@@ -4,10 +4,14 @@ import BannerBottom from "../components/BannerBottom";
 
 export default function About() {
   return (
-    <Layout title="About">
-      <div className="text-3xl font-bold text-center justify-center m-5 ">
-        About Us
-      </div>
+    <Layout
+      title="About"
+      banner={
+        <div className="h-96 bg-about-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+          <h1 className="text-5xl font-bold w-1/3">About Us</h1>
+        </div>
+      }
+    >
       <div className="text-xl w-1/2">
         <div className="mb-10">
           PT/Nutrition Marketing is a digital marketing agency dedicated to

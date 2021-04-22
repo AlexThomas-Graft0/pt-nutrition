@@ -22,14 +22,14 @@ export default function SEO() {
         banner={
           <div className="h-96 bg-seo-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
             <h1 className="text-5xl font-bold w-1/3">SEO</h1>
-            <div className="mt-3 text-2xl w-1/2">
-              Search Engine Optimisation for PT &amp; Nutritionists
+            <div className="text-2xl font-semibold">
+              For PTs &amp; Nutritionalists.
             </div>
           </div>
         }
       >
         <div className="flex w-full">
-          <Image src="/images/ptseo.png" width={761 * 2} height={944 * 2} />
+          <Image src="/images/ptseo.PNG" width={761 * 2} height={944 * 2} />
           <div className="flex flex-col space-y-5 justify-start items-center w-1/2 text-xl">
             <h2 className="text-3xl font-bold my-2 p-3">What is SEO?</h2>
             <h3 className="text-2xl font-semibold">

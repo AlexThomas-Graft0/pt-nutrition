@@ -17,17 +17,17 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-96 bg-header-image bg-cover bg-center flex flex-col justify-center items-center text-white text-center">
+      <div className="h-96 bg-cover bg-center bg-index-header-image flex flex-col justify-center items-center text-black text-center">
         <h1 className="text-5xl font-bold w-1/3">
           Do you want to grow your PT or Nutrition Business?
         </h1>
-        <div className="mt-3 text-2xl w-1/2">
+      </div>
+      <Layout title="Home">
+        <div className="mt-3 text-xl w-3/4 text-center">
           With industry knowledge and the benefit of specialising in websites
           for PTs and Nutritions, we know exactly what works and how to grow
           your business.
         </div>
-      </div>
-      <Layout title="Home">
         <Cards cardData={features} />
         {/* banner */}
         <div className="flex justify-center items-center text-3xl p-3 my-3 md:h-20">

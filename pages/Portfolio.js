@@ -1,18 +1,23 @@
 import Layout from "../components/Layout";
 import FreeAnalysis from "../components/FreeAnalysis";
-import Link from "next/link";
 import BannerBottom from "../components/BannerBottom";
 
 export default function Portfolio() {
   return (
-    <Layout title="Portfolio">
-      <div>
-        <div className="text-3xl font-bold text-center justify-center m-5 ">
-          Our Work for PTs &amp; Nutritionists
+    <Layout
+      title="Portfolio"
+      banner={
+        <div className="h-96 bg-portfolio-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+          <h1 className="text-5xl font-bold w-1/3">
+            Our Work for PTs &amp; Nutritionists
+          </h1>
         </div>
+      }
+    >
+      <div>
         <div className="text-xl text-center justify-center m-5">
           Finding the right marketing agency is not easy... there are so many
-          choices to choose from. This is why we ONLY work with PT &
+          choices to choose from. This is why we ONLY work with PT &amp;
           Nutritionist business. We get more clients through effective online
           marketing and development.
         </div>
