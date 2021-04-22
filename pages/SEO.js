@@ -29,7 +29,7 @@ export default function SEO() {
         }
       >
         <div className="flex w-full">
-          <Image src="/images/ptseo.png" width={761 * 2} height={944 * 2} />
+          <Image src="/images/ptseo.PNG" width={761 * 2} height={944 * 2} />
           <div className="flex flex-col space-y-5 justify-start items-center w-1/2 text-xl">
             <h2 className="text-3xl font-bold my-2 p-3">What is SEO?</h2>
             <h3 className="text-2xl font-semibold">
