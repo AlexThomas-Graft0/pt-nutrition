@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 import FreeAnalysis from "../components/FreeAnalysis";
