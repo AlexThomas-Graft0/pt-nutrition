@@ -23,14 +23,14 @@ export default function Home() {
         </h1>
       </div>
       <Layout title="Home">
-        <div className="mt-3 text-xl w-3/4 text-center">
+        <div className="mt-3 text-xl w-3/4 text-center mb-5">
           With industry knowledge and the benefit of specialising in websites
           for PTs and Nutritions, we know exactly what works and how to grow
           your business.
         </div>
         <Cards cardData={features} />
         {/* banner */}
-        <div className="flex justify-center items-center text-3xl p-3 my-3 md:h-20">
+        <div className="flex justify-center items-center text-3xl p-3 mb-3 md:h-20">
           We focus on getting you more clients, while you focus on running your
           business.
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         {/* free website analysis */}
         {/* marketing */}
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center my-3">
           <span className="font-bold">PT Nutrition Marketing</span> has a
           dedicated team of expert marketers focused on helping personal
           trainers and nutritionists get more clients via and consulting.

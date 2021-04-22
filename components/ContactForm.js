@@ -7,14 +7,14 @@ export default function ContactForm() {
   const message = "Message Sent!";
   const error = "Failed, please refresh and try again!";
   return (
-    <div className="flex flex-col justify-center items-center h-full w-full dark:bg-gray-900">
+    <div className="flex flex-col justify-center my-6 items-center h-full w-full dark:bg-gray-900">
       <div className="">
         <div className="border p-5 rounded-md shadow-sm">
           <div className="text-center">
-            <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            <h1 className="my-3 text-3xl font-semibold text-gray-500 dark:text-gray-200">
               Contact Us
             </h1>
-            <p className="text-gray-400 dark:text-gray-400">
+            <p className="text-gray-500 dark:text-gray-400">
               Fill up the form below to send us a message.
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function ContactForm() {
               <div className="mb-6">
                 <label
                   htmlFor="name"
-                  className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="block mb-2 text-sm text-gray-500 dark:text-gray-400"
                 >
                   Full Name
                 </label>
@@ -39,7 +39,7 @@ export default function ContactForm() {
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="block mb-2 text-sm text-gray-500 dark:text-gray-400"
                 >
                   Email Address
                 </label>
@@ -55,7 +55,7 @@ export default function ContactForm() {
               <div className="mb-6">
                 <label
                   htmlFor="phone"
-                  className="text-sm text-gray-600 dark:text-gray-400"
+                  className="text-sm text-gray-500 dark:text-gray-400"
                 >
                   Phone Number
                 </label>
@@ -71,7 +71,7 @@ export default function ContactForm() {
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="block mb-2 text-sm text-gray-500 dark:text-gray-400"
                 >
                   Your Message
                 </label>
@@ -85,7 +85,7 @@ export default function ContactForm() {
                   required
                 ></textarea>
               </div>
-              <div className="mb-6">
+              <div className="mb-6 text-center">
                 <Button type="submit">Send Message</Button>
               </div>
               {message && (

@@ -27,7 +27,7 @@ export default function Marketing() {
         }
       >
         <div>
-          <div className="text-xl mt-3 text-center">
+          <div className="text-xl mt-3 text-center mb-5">
             Finding the right marketing company among the multitude of choices
             available is not easy. For this reason we specialize in PTs and
             Nutrition Businesses. We aquire clients through effective online
@@ -38,14 +38,14 @@ export default function Marketing() {
         <div className="text-xl text-center justify-center font-bold">
           Scenario #1: You Already Have A Website
         </div>
-        <div className="text-xl ">
+        <div className="text-xl">
           If you already have a website, was is just created by an
           individual/company who creates websites that they thought may look
           good or does it actually work? Does it send the right message across
           to a potential clients about what they are looking for? Does it
           fulfill your business objective of getting more patients?
         </div>
-        <div className="text-xl text-center justify-center font-bold m-10">
+        <div className="text-xl text-center justify-center font-bold">
           Scenario #2: You Don't Have A Website Yet
         </div>
         <div className="text-xl text-center justify-center mb-5">

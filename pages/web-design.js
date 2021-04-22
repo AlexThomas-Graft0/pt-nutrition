@@ -101,7 +101,7 @@ export default function WebDesign() {
             width={1050}
             height={600}
           />
-          <div className="mt-10">
+          <div className="mt-10 mb-5 text-xl">
             We create effective websites that are perfect for your business and
             the website visitor.
             <br />
@@ -111,7 +111,7 @@ export default function WebDesign() {
         </div>
         {/* image */}
         {/* website neccessities grid */}
-        <div className="container flex flex-wrap items-center justify-around max-w-5xl mt-6 sm:w-full">
+        <div className="container flex flex-wrap items-center justify-around max-w-5xl sm:w-full">
           {features.map(({ icon, text, name }, i) => (
             <div
               key={i}
@@ -124,7 +124,7 @@ export default function WebDesign() {
         </div>
         {/* website neccessities grid */}
         {/* contact form */}
-        <div className="w-full flex justify-around items-center mt-3">
+        <div className="w-full flex justify-around items-center">
           <ContactForm />
           <FreeAnalysis />
         </div>

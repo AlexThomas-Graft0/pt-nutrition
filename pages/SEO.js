@@ -85,7 +85,7 @@ export default function SEO() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-semibold text-center mt-3">
+          <h3 className="text-2xl font-semibold text-center mt-3 mb-5">
             How We Grow Your business With SEO:
           </h3>
           <Cards cardData={features} classes="max-w-9xl" />

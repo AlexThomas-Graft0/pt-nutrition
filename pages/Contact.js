@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 export default function Contact() {
   return (
     <Layout title="Contatct">
-      <ContactForm />
+      <ContactForm className="mt-5" />
       <div>
         <div className="m-5">To email a specific department:</div>
         <div className="mb-5">

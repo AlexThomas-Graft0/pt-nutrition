@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 import BannerBottom from "../components/BannerBottom";
 
 export default function About() {
