@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <Layout title="Contatct">
       <ContactForm />
-      <div>
+      <div className="text-gray-800">
         <div className="m-5">To email a specific department:</div>
         <div className="mb-5">
           <div className="font-bold">Sales</div>

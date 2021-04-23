@@ -6,7 +6,7 @@ export default function Blog() {
     <Layout
       title="Blog"
       banner={
-        <div className="h-96 bg-blog-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+        <div className="h-96 bg-blog-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
           <h1 className="text-5xl font-bold w-1/3">Check Out Our Blog</h1>
         </div>
       }
