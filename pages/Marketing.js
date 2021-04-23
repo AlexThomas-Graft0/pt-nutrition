@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import BannerBottom from "../components/BannerBottom";
+import Link from "next/link";
 
 export default function Marketing() {
   const [features, setFeatures] = useState([]);
@@ -23,6 +24,11 @@ export default function Marketing() {
             <h1 className="text-5xl font-bold w-1/3">
               Online Marketing Solutions for PTs & Nutritionists
             </h1>
+            <Link href="/Contact">
+              <a className="bg-green-400 hover:bg-green-300 text-xl font-semibold text-white px-2 py-1 rounded mt-5">
+                Get in Touch
+              </a>
+            </Link>
           </div>
         }
       >
