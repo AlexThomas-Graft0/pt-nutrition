@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Button from "../components/Button";
@@ -10,6 +10,10 @@ export default function Navbar() {
   const toggleOpen = () => {
     setOpen(!isOpen);
   };
+
+  useEffect(() => {
+    setOpen(false);
+  }, []);
 
   const links = [
     "Home",
@@ -93,7 +97,10 @@ export default function Navbar() {
             } z-20 flex-grow w-full p-4 mt-2 text-xl text-gray-300 bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
             id="nav-content"
           >
-            <ul className="items-center justify-end flex-1 list-reset lg:flex">
+            <ul
+              className="items-center justify-end flex-1 list-reset lg:flex"
+              onClick={() => setOpen(false)}
+            >
               {links}
             </ul>
           </div>

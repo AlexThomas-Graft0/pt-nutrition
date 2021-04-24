@@ -13,7 +13,7 @@ export default function Marketing() {
   }
   useEffect(() => {
     fetchFeatures();
-  , []});
+  }, []);
 
   return (
     <div>

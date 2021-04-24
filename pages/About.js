@@ -8,11 +8,11 @@ export default function About() {
       title="About"
       banner={
         <div className="h-96 bg-about-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
-          <h1 className="text-5xl font-bold w-1/3">About Us</h1>
+          <h1 className="text-5xl font-bold md:w-1/3">About Us</h1>
         </div>
       }
     >
-      <div className="text-xl w-1/2">
+      <div className="text-xl md:w-1/2 px-3">
         <div className="mb-10">
           PT/Nutrition Marketing is a digital marketing agency dedicated to
           growing Pt &amp; Nutrition Businesses. We are focused on results and

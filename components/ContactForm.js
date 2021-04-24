@@ -1,11 +1,16 @@
+import { useState } from "react";
 import Button from "../components/Button";
 
 export default function ContactForm() {
+  const messageStates = ["Error", "Success"];
   function onSubmit() {
+    e.preventDefault();
+    setMessage(messageStates[Math.floor(Math.random() * messageStates.length)]);
     return;
   }
-  const message = "Message Sent!";
-  const error = "Failed, please refresh and try again!";
+  const [message, setMessage] = useState("");
+  // "Message Sent!";
+  // const error = "Failed, please refresh and try again!";
   return (
     <div className="flex flex-col justify-center items-center h-full w-full dark:bg-gray-900">
       <div className="">
@@ -89,12 +94,13 @@ export default function ContactForm() {
                 <Button type="submit">Send Message</Button>
               </div>
               {message && (
-                <p className="text-base text-center text-green-400">
+                <p
+                  className={`text-base text-center text-${
+                    message.contains("Error") ? "red" : "green"
+                  }-400`}
+                >
                   {message}
                 </p>
-              )}
-              {error && (
-                <p className="text-base text-center text-red-400">{error}</p>
               )}
             </form>
           </div>
