@@ -23,7 +23,7 @@ export default function Home() {
         title="Home"
         banner={
           <div className="h-96 bg-index-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-50ite text-center">
-            <h1 className="text-xl md:text-5xl font-bold md:w-1/3">
+            <h1 className="text-4xl font-bold md:w-1/3">
               Do you want to grow your PT or Nutrition Business?
             </h1>
             <div className="my-3 md:text-2xl md:w-1/2">

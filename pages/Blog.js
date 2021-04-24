@@ -7,9 +7,7 @@ export default function Blog() {
       title="Blog"
       banner={
         <div className="h-96 bg-blog-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
-          <h1 className="text-xl md:text-5xl font-bold md:w-1/3">
-            Check Out Our Blog
-          </h1>
+          <h1 className="text-4xl font-bold md:w-1/3">Check Out Our Blog</h1>
         </div>
       }
     >
