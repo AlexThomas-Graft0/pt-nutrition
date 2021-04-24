@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 import BannerBottom from "../components/BannerBottom";
 
 export default function About() {
@@ -7,7 +6,7 @@ export default function About() {
     <Layout
       title="About"
       banner={
-        <div className="h-96 bg-about-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+        <div className="h-96 bg-about-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
           <h1 className="text-5xl font-bold md:w-1/3">About Us</h1>
         </div>
       }

@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Cards from "../components/Cards";
 import BannerBottom from "../components/BannerBottom";
 import FreeAnalysisBanner from "../components/FreeAnalysisBanner";
+import Link from "next/link";
 
 export default function Marketing() {
   const [features, setFeatures] = useState([]);
@@ -22,8 +23,13 @@ export default function Marketing() {
         banner={
           <div className="h-96 bg-marketing-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
             <h1 className="text-4xl md:text-5xl font-bold md:w-1/3">
-              Online Marketing Solutions for PTs & Nutritionists
+              Online Marketing Solutions for PTs &amp; Nutritionists
             </h1>
+            <Link href="/Contact">
+              <a className="bg-green-400 hover:bg-green-300 text-xl font-semibold text-white px-2 py-1 rounded mt-5">
+                Get in Touch
+              </a>
+            </Link>
           </div>
         }
       >

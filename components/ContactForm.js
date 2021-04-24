@@ -16,10 +16,10 @@ export default function ContactForm() {
       <div className="">
         <div className="border p-5 rounded-md shadow-sm">
           <div className="text-center">
-            <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            <h1 className="my-3 text-3xl font-semibold text-gray-600 dark:text-gray-200">
               Contact Us
             </h1>
-            <p className="text-gray-400 dark:text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400">
               Fill up the form below to send us a message.
             </p>
           </div>

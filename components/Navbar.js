@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Button from "../components/Button";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
