@@ -36,6 +36,8 @@ import {
   ShieldCheckIcon,
   SpeakerphoneIcon,
   BriefcaseIcon,
+  MailIcon,
+  MailOpenIcon,
 } from "@heroicons/react/outline";
 
 const icons = [
@@ -229,6 +231,14 @@ const icons = [
     icon: (
       <BriefcaseIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
     ),
+  },
+  {
+    name: "mail",
+    icon: <MailIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
+  },
+  {
+    name: "mailopen",
+    icon: <MailOpenIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
 ];
 
