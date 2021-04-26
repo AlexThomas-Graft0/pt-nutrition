@@ -19,6 +19,7 @@ module.exports = {
         "ppc-ab-testing": "url('/images/ppc-laptop-ab-testing.png')",
         "ppc-management": "url('/images/ppc-management.png')",
         "portfolio-header-image": "url('/images/portfolio_header.jpg')",
+        "analysis-banner-image": "url('/images/analysis-banner.jpg')",
       }),
     },
   },
