@@ -42,7 +42,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="p-5 w-full md:flex md:w-1/2">
+        <div className="p-5 w-full md:flex md:w-1/2 flex-col">
           <div className="hidden md:flex text-xs uppercase text-gray-50 font-medium my-3">
             Legal
           </div>
