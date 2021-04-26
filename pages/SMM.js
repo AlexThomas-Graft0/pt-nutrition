@@ -32,7 +32,7 @@ export default function SMM() {
             </h2>
             <div className="my-10">
               <Image
-                src="/images/social-media-for-dentists.jpg"
+                src="/images/smm-spider-diagram.jpg"
                 width="460"
                 height="340"
               />
