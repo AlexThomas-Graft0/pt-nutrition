@@ -14,7 +14,7 @@ export default function CopyWriting() {
   }
   useEffect(() => {
     fetchFeatures();
-  });
+  }, []);
 
   return (
     <>

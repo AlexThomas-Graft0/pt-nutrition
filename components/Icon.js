@@ -36,157 +36,209 @@ import {
   ShieldCheckIcon,
   SpeakerphoneIcon,
   BriefcaseIcon,
+  MailIcon,
+  MailOpenIcon,
 } from "@heroicons/react/outline";
 
 const icons = [
   {
     name: "security",
-    icon: <LockOpenIcon className="h-10 w-10  text-green-500" />,
+    icon: (
+      <LockOpenIcon className="h-20 w-20 md:h-10 md:w-10  text-green-500" />
+    ),
   },
   {
     name: "services",
-    icon: <ViewListIcon className="h-10 w-10 text-green-500" />,
+    icon: <ViewListIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "cta",
-    icon: <LightningBoltIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <LightningBoltIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "fast",
-    icon: <FastForwardIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <FastForwardIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "seo",
-    icon: <SearchIcon className="h-10 w-10 text-green-500" />,
+    icon: <SearchIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "expert",
-    icon: <AcademicCapIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <AcademicCapIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "clipboard",
-    icon: <ClipboardCheckIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <ClipboardCheckIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "eye",
-    icon: <EyeIcon className="h-10 w-10 text-green-500" />,
+    icon: <EyeIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "heart",
-    icon: <HeartIcon className="h-10 w-10 text-green-500" />,
+    icon: <HeartIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "fire",
-    icon: <FireIcon className="h-10 w-10 text-green-500" />,
+    icon: <FireIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "thumb",
-    icon: <ThumbUpIcon className="h-10 w-10 text-green-500" />,
+    icon: <ThumbUpIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "bar-chart",
-    icon: <ChartBarIcon className="h-10 w-10 text-green-500" />,
+    icon: <ChartBarIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "user",
-    icon: <UserIcon className="h-10 w-10 text-green-500" />,
+    icon: <UserIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "pie-chart",
-    icon: <ChartPieIcon className="h-10 w-10 text-green-500" />,
+    icon: <ChartPieIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "book",
-    icon: <BookOpenIcon className="h-10 w-10 text-green-500" />,
+    icon: <BookOpenIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "computer",
-    icon: <DesktopComputerIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <DesktopComputerIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "click",
-    icon: <CursorClickIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <CursorClickIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
 
   {
     name: "search-circle",
-    icon: <SearchCircleIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <SearchCircleIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "pencil",
-    icon: <PencilAltIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <PencilAltIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "user-group",
-    icon: <UserGroupIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <UserGroupIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "board-chart",
-    icon: <PresentationChartLineIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <PresentationChartLineIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "share",
-    icon: <ShareIcon className="h-10 w-10 text-green-500" />,
+    icon: <ShareIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "refresh",
-    icon: <RefreshIcon className="h-10 w-10 text-green-500" />,
+    icon: <RefreshIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "pound",
-    icon: <CurrencyPoundIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <CurrencyPoundIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "template",
-    icon: <TemplateIcon className="h-10 w-10 text-green-500" />,
+    icon: <TemplateIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "chart-square-bar",
-    icon: <ChartSquareBarIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <ChartSquareBarIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "beaker",
-    icon: <BeakerIcon className="h-10 w-10 text-green-500" />,
+    icon: <BeakerIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "document-search",
-    icon: <DocumentSearchIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <DocumentSearchIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "code",
-    icon: <CodeIcon className="h-10 w-10 text-green-500" />,
+    icon: <CodeIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "link",
-    icon: <LinkIcon className="h-10 w-10 text-green-500" />,
+    icon: <LinkIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
   {
     name: "newspaper",
-    icon: <NewspaperIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <NewspaperIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "acedemic",
-    icon: <AcademicCapIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <AcademicCapIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "badge",
-    icon: <BadgeCheckIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <BadgeCheckIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "happy",
-    icon: <EmojiHappyIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <EmojiHappyIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "shield",
-    icon: <ShieldCheckIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <ShieldCheckIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "speakerphone",
-    icon: <SpeakerphoneIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <SpeakerphoneIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
   },
   {
     name: "briefcase",
-    icon: <BriefcaseIcon className="h-10 w-10 text-green-500" />,
+    icon: (
+      <BriefcaseIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />
+    ),
+  },
+  {
+    name: "mail",
+    icon: <MailIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
+  },
+  {
+    name: "mailopen",
+    icon: <MailOpenIcon className="h-20 w-20 md:h-10 md:w-10 text-green-500" />,
   },
 ];
 

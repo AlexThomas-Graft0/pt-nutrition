@@ -1,23 +1,20 @@
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
+import Icon from "../components/Icon";
 
 export default function Contact() {
   return (
     <Layout title="Contatct">
       <ContactForm />
       <div className="text-gray-800">
-        <div className="m-5">To email a specific department:</div>
         <div className="mb-5">
-          <div className="font-bold">Sales</div>
-          <div>sales@pt-nutrition-marketing.com</div>
-        </div>
-        <div className="mb-5">
-          <div className="font-bold">Billing</div>
-          <div>accounts@pt-nutrition-marketing.com</div>
-        </div>
-        <div className="mb-5">
-          <div className="font-bold">General</div>
-          <div>info@pt-nutrition-marketing.com</div>
+          <a
+            className="flex items-center text-center"
+            href="mailto:info@pt-nutrition-marketing.com"
+          >
+            <Icon name="mail" />
+            pt-nutrition-marketing.com
+          </a>
         </div>
       </div>
     </Layout>
