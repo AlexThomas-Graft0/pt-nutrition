@@ -15,7 +15,7 @@ export default function Portfolio() {
         </div>
       }
     >
-      <div className="text-xl md:w-1/2 mb-3">
+      <div className="text-xl md:w-2/3 mb-3">
         <div className="text-xl text-center ">
           Finding the right marketing agency is not easy... there are so many
           choices to choose from. This is why we ONLY work with PT &amp;

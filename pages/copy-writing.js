@@ -41,7 +41,7 @@ export default function CopyWriting() {
             Why Is Content Marketing Important?
           </h3>
           <Cards cardData={features} classes="max-w-4xl" />
-          <h3 className="text-2xl font-semibold text-center mt-3">
+          <h3 className="text-2xl font-semibold text-center my-3">
             How we grow your business with Copy Writing:
           </h3>
           <Image

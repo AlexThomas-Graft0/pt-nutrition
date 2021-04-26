@@ -29,7 +29,7 @@ export default function PPC() {
           </div>
         }
       >
-        <div>
+        <div className="w-3/4">
           <div className="text-xl mt-3 text-center">
             Finding the right marketing company among the multitude of choices
             available is not easy. For this reason we specialize in PTs and
