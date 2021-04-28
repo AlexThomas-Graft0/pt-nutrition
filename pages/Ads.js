@@ -61,9 +61,9 @@ export default function Ads() {
           </div>
           <div className="my-10">
             <Image
-              src="/images/online-advertising-graphic.jpg"
-              width="480"
-              height="440"
+              src="/images/ads-spider-diagram.jpg"
+              width="540"
+              height="540"
             />
           </div>
           <div>
