@@ -46,11 +46,14 @@ export default function Ads() {
                 every second
               </li>
             </ul>
-              You can check out more stats here:
-              <a className="text-blue-700" href="https://www.internetlivestats.com">
-                {" "}
-                Internet Live Stats
-              </a>
+            You can check out more stats here:
+            <a
+              className="text-blue-600 hover:text-blue-400"
+              href="https://www.internetlivestats.com"
+            >
+              {" "}
+              Internet Live Stats
+            </a>
           </div>
           <div className="flex">
             <div className="w-96 border rounded mx-2 p-5 text-center shadow-lg">
