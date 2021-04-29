@@ -9,23 +9,26 @@ import Icon from "../components/Icon";
 export default function WebDesign() {
   const [features, setFeatures] = useState([]);
   async function fetchFeatures() {
-    const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+    const res = await fetch(`/api/websiteFeatures`);
     const websiteFeatures = await res.json();
     setFeatures(websiteFeatures);
   }
   useEffect(() => {
     fetchFeatures();
-  });
+  }, []);
 
   return (
     <>
-      <div className="h-96 bg-web-design-header-image bg-contain bg-center flex flex-col justify-center items-center text-gray-800">
-        <h1 className="text-5xl font-bold w-1/3 text-center">
-          Web Design and Websites for PTs &amp; Nutritionists
-        </h1>
-        <div className="mt-3 text-2xl w-1/2"></div>
-      </div>
-      <Layout title="Home">
+      <Layout
+        title="Home"
+        banner={
+          <div className="h-96 bg-web-design-header-image bg-cover bg-center flex flex-col justify-center items-center text-black text-center">
+            <h1 className="text-5xl font-bold w-1/3 text-gray-800">
+              Web Design For PTs &amp; Nutritionalists
+            </h1>
+          </div>
+        }
+      >
         <div className="flex flex-col justify-center items-center px-3 py-5 my-3 space-y-5 w-full text-gray-700">
           {/* anchor */}
           <div className="text-3xl">
@@ -36,7 +39,7 @@ export default function WebDesign() {
             How about a website created tailored for PTs &amp; Nutritionists by
             a team who understands exactly what you're looking for?
           </div>
-          {/* anchor */}
+          {/* anchors */}
           {/* grid */}
           <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
             <a
@@ -44,16 +47,16 @@ export default function WebDesign() {
               className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
             >
               <Image
-                src="/images/website.png"
+                src="/images/placeholder1.jpg"
                 alt="websites"
-                width={250}
-                height={250}
+                width={300}
+                height={300}
               />
               <h3 className="text-xl font-bold">
                 A PT or Nutritionist Would Like To:
               </h3>
               <ul className="mt-4">
-                <li>Go On Holiday 😉</li>
+                <li>Go On Holiday</li>
                 <li>Be Fully Booked</li>
                 <li>Get More Clients</li>
                 <li>Have a Waiting List</li>
@@ -67,10 +70,10 @@ export default function WebDesign() {
             <Link href="PPC">
               <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
                 <Image
-                  src="/images/ppc.png"
+                  src="/images/placeholder2.jpg"
                   alt="ppc"
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={300}
                 />
                 <h3 className="text-xl font-bold">
                   A Website Visitor Would Like To:
@@ -93,12 +96,12 @@ export default function WebDesign() {
         {/* image */}
         <div className="flex flex-col justify-center items-center my-3">
           <Image
-            src="/images/dentist-web-design.jpg"
+            src="/images/web_design_image.jpg"
             alt="ppc"
-            width={740}
-            height={440}
+            width={1050}
+            height={600}
           />
-          <div className="mt-3">
+          <div className="mt-10">
             We create effective websites that are perfect for your business and
             the website visitor.
             <br />
@@ -132,7 +135,7 @@ export default function WebDesign() {
 }
 
 // export async function getStaticProps(context) {
-//   const res = await fetch(`http://localhost:3000/api/websiteFeatures`);
+//   const res = await fetch(`/api/websiteFeatures`);
 //   // const websiteFeatures = await res.json();
 //   const websiteFeatures = await res.json();
 

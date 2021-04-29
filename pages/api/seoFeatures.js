@@ -1,7 +1,7 @@
 export default function seoFeatures(req, res) {
   res.status(200).json([
     {
-      icon: "security",
+      icon: "document-search",
       // icon: "crosshairaroundlist",
       title: "Keyword Analysis",
       body:
@@ -9,28 +9,28 @@ export default function seoFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "code",
       // icon: "title-change",
       title: "Title Optimization",
       body: "Relevant use of title tags focused on ideal searches.",
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "fire",
       // icon: "keyword-url",
       title: "Keyword-Rich URLs",
       body: "Optimizing of the URL website structure.",
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "pencil",
       // icon: "conversion-copy-writing",
       title: "SEO Content Writing",
       body: "Targeted SEO content creation for Google to understand better.",
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "link",
       // icon: "internal-links",
       title: "Internal Linking",
       body:
@@ -38,15 +38,15 @@ export default function seoFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "pie-chart",
       // icon: "link-building",
       title: "Link Building",
       body:
-        "Strategic links to your PT &amp; Nutrtionist business will help it rank on Google.",
+        "Strategic links to your PT & Nutrtionist business will help it rank on Google.",
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "seo",
       // icon: "local-seo",
       title: "Local SEO",
       body:
@@ -54,7 +54,7 @@ export default function seoFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "newspaper",
       // icon: "press-release",
       title: "Press Releases",
       body:

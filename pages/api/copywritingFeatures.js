@@ -1,7 +1,7 @@
 export default function adsFeatures(req, res) {
   res.status(200).json([
     {
-      icon: "security",
+      icon: "briefcase",
       // icon: "authority",
       title: "Shows Authority",
       body:
@@ -9,14 +9,14 @@ export default function adsFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "shield",
       // icon: "credibility",
       title: "Shows Credibility",
       body: `Credibility positions you as the "go-to" PT or Nutrtionist clients want to see.`,
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "board-chart",
       // icon: "seo-graph",
       title: "Improves SEO",
       body:
@@ -24,7 +24,7 @@ export default function adsFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "happy",
       // icon: "trust",
       title: "Relays Trust",
       body:
@@ -32,7 +32,7 @@ export default function adsFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "user-group",
       // icon: "groupofpeople",
       title: "Converts Visitors Into Clients",
       body:
@@ -40,7 +40,7 @@ export default function adsFeatures(req, res) {
       // subtext: "",
     },
     {
-      icon: "security",
+      icon: "acedemic",
       // icon: "education",
       title: "Educates the Clients",
       body:

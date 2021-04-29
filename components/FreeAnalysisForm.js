@@ -1,11 +1,13 @@
+import { useState } from "react";
 import Button from "./Button";
 
 export default function FreeAnalysisForm({ setShowModal, showModal }) {
   function onSubmit() {
     return;
   }
-  const message = "Message Sent!";
+  const [message, setMessage] = useState("");
   const error = "Failed, please refresh and try again!";
+  //Message Sent!
   return (
     <div className="flex flex-col justify-center items-center h-full w-full dark:bg-gray-900">
       <div className="border p-5 rounded-md shadow-sm">
@@ -89,10 +91,13 @@ export default function FreeAnalysisForm({ setShowModal, showModal }) {
               <Button type="submit">Send Message</Button>
             </div>
             {message && (
-              <p className="text-base text-center text-green-400">{message}</p>
-            )}
-            {error && (
-              <p className="text-base text-center text-red-400">{error}</p>
+              <p
+                className={`text-base text-center text-${
+                  message.contains("Error") ? "red" : "green"
+                }-400`}
+              >
+                {message}
+              </p>
             )}
           </form>
         </div>

@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Button from "../components/Button";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -10,6 +9,10 @@ export default function Navbar() {
   const toggleOpen = () => {
     setOpen(!isOpen);
   };
+
+  useEffect(() => {
+    setOpen(false);
+  }, []);
 
   const links = [
     "Home",
@@ -40,7 +43,7 @@ export default function Navbar() {
           <a
             className={`${
               setActiveClasses(link) ? "font-bold text-xl text-white " : ""
-            } inline-block px-4 py-2 text-gray-200 hover:text-white`}
+            } inline-block px-4 py-2 text-gray-50 hover:text-white`}
           >
             {link}
           </a>
@@ -50,19 +53,19 @@ export default function Navbar() {
   });
   return (
     <>
-      <div className="w-full flex justify-between items-center p-5 my-3">
-        <Button color="green" rounded>
-          <Link href="/Contact">
-            <a>Contact</a>
-          </Link>
-        </Button>
-        <Button color="green" rounded>
-          <Link href="/Contact">
-            <a>Free Consultation</a>
-          </Link>
-        </Button>
+      <div className="w-full hidden md:flex justify-between items-center p-5 my-3">
+        <Link href="/Contact">
+          <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
+            Contact
+          </a>
+        </Link>
+        <Link href="/Contact">
+          <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
+            Free Consultation
+          </a>
+        </Link>
       </div>
-      <nav className={`text-white lg:bg-opacity-90 lg:bg-green-500 py-2`}>
+      <nav className={`text-green-400 lg:bg-opacity-90 lg:bg-green-500 pt-2`}>
         <div className="container flex flex-wrap items-center justify-between w-full mx-auto mt-0">
           <div className="flex justify-start pl-4">
             <Link href="/">
@@ -74,7 +77,7 @@ export default function Navbar() {
           <div className="block pr-4 lg:hidden">
             <button
               id="nav-toggle"
-              className="flex items-center p-1 text-green-800 transition duration-300 ease-in-out transform hover:text-white focus:outline-none focus:shadow-outline hover:scale-105"
+              className="flex items-center p-1 text-green-800 transition duration-300 ease-in-out transform hover:text-green-400 focus:outline-none focus:shadow-outline hover:scale-105"
               onClick={toggleOpen}
             >
               <svg
@@ -90,10 +93,13 @@ export default function Navbar() {
           <div
             className={`${
               isOpen ? "" : "hidden"
-            } z-20 flex-grow w-full p-4 mt-2 text-xl text-gray-600 bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
+            } z-20 flex-grow w-full p-4 mt-2 text-xl text-gray-50 bg-green-400 bg-opacity-75 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0`}
             id="nav-content"
           >
-            <ul className="items-center justify-end flex-1 list-reset lg:flex">
+            <ul
+              className="items-center justify-end flex-1 list-reset lg:flex"
+              onClick={() => setOpen(false)}
+            >
               {links}
             </ul>
           </div>

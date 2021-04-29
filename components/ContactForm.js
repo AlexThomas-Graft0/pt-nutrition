@@ -1,20 +1,25 @@
+import { useState } from "react";
 import Button from "../components/Button";
 
 export default function ContactForm() {
-  function onSubmit() {
+  const messageStates = ["Error", "Success"];
+  function onSubmit(e) {
+    e.preventDefault();
+    setMessage(messageStates[Math.floor(Math.random() * messageStates.length)]);
     return;
   }
-  const message = "Message Sent!";
-  const error = "Failed, please refresh and try again!";
+  const [message, setMessage] = useState("");
+  // "Message Sent!";
+  // const error = "Failed, please refresh and try again!";
   return (
     <div className="flex flex-col justify-center items-center h-full w-full dark:bg-gray-900">
       <div className="">
         <div className="border p-5 rounded-md shadow-sm">
           <div className="text-center">
-            <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            <h1 className="my-3 text-3xl font-semibold text-gray-600 dark:text-gray-200">
               Contact Us
             </h1>
-            <p className="text-gray-400 dark:text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400">
               Fill up the form below to send us a message.
             </p>
           </div>
@@ -32,7 +37,7 @@ export default function ContactForm() {
                   name="name"
                   id="name"
                   placeholder="John Doe"
-                  required
+                  // required
                   className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
                 />
               </div>
@@ -48,7 +53,7 @@ export default function ContactForm() {
                   name="email"
                   id="email"
                   placeholder="you@company.com"
-                  required
+                  // required
                   className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
                 />
               </div>
@@ -64,7 +69,7 @@ export default function ContactForm() {
                   name="phone"
                   id="phone"
                   placeholder="+1 (555) 1234-567"
-                  required
+                  // required
                   className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
                 />
               </div>
@@ -82,19 +87,20 @@ export default function ContactForm() {
                   id="message"
                   placeholder="Your Message"
                   className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-                  required
+                  // required
                 ></textarea>
               </div>
               <div className="mb-6">
                 <Button type="submit">Send Message</Button>
               </div>
               {message && (
-                <p className="text-base text-center text-green-400">
+                <div
+                  className={`text-base text-center ${
+                    message.includes("Error") ? "bg-red-400" : "bg-green-400"
+                  }`}
+                >
                   {message}
-                </p>
-              )}
-              {error && (
-                <p className="text-base text-center text-red-400">{error}</p>
+                </div>
               )}
             </form>
           </div>

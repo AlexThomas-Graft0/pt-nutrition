@@ -4,18 +4,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "header-image": "url('/img/header-image.jpg')",
-        "web-design-header-image":
-          "url('/images/dentist-web-design-background.jpg')",
-        "copy-writing-header-image":
-          "url('/images/content-writing-background.jpg')",
-        "online-ads-header-image": "url('/images/online-ads-background.jpg')",
-        "seo-header-image": "url('/images/seo-background.jpg')",
-        "smm-header-image": "url('/images/social-media-background.jpg')",
-        "ppc-header-image": "url('/images/ppc-background.jpg')",
+        "index-header-image": "url('/images/home-header.jpg')",
+        "blog-header-image": "url('/images/blog-header.jpg')",
+        "about-header-image": "url('/images/about-header.jpg')",
+        "marketing-header-image": "url('/images/marketing-header.jpg')",
+        "contact-header-image": "url('/images/contact-header.jpg')",
+        "web-design-header-image": "url('/images/web-design-header.jpg')",
+        "copy-writing-header-image": "url('/images/copy-writing-header.jpg')",
+        "ads-header-image": "url('/images/ads-header.jpg')",
+        "seo-header-image": "url('/images/seo-header.jpg')",
+        "smm-header-image": "url('/images/social-media-header.jpg')",
+        "ppc-header-image": "url('/images/ppc-header.jpg')",
         "ppc-laptop": "url('/images/ppc-laptop.png')",
         "ppc-ab-testing": "url('/images/ppc-laptop-ab-testing.png')",
         "ppc-management": "url('/images/ppc-management.png')",
+        "portfolio-header-image": "url('/images/portfolio_header.jpg')",
       }),
     },
   },
