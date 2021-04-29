@@ -46,10 +46,13 @@ export default function Ads() {
                 every second
               </li>
             </ul>
-            You can check out more stats here.
-            <a href="https://www.internetlivestats.com">internet live stats</a>
+              You can check out more stats here:
+              <a className="text-blue-700" href="https://www.internetlivestats.com">
+                {" "}
+                Internet Live Stats
+              </a>
           </div>
-          <div className="flex ">
+          <div className="flex">
             <div className="w-96 border rounded mx-2 p-5 text-center shadow-lg">
               Online advertising is one of the best ROI forms of client
               aquisition around today.
