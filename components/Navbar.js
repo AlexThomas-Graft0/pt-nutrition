@@ -43,7 +43,7 @@ export default function Navbar() {
           <a
             className={`${
               setActiveClasses(link) ? "font-bold text-xl text-white " : ""
-            } inline-block px-4 py-2 text-gray-50 hover:text-white`}
+            } inline-block px-4 py-3 text-gray-50 hover:text-white`}
           >
             {link}
           </a>
@@ -65,7 +65,7 @@ export default function Navbar() {
           </a>
         </Link>
       </div>
-      <nav className={`text-green-400 lg:bg-opacity-90 lg:bg-green-500 pt-2`}>
+      <nav className={`text-green-600 lg:bg-opacity-90 lg:bg-green-500 pt-2`}>
         <div className="container flex flex-wrap items-center justify-between w-full mx-auto mt-0">
           <div className="flex justify-start pl-4">
             <Link href="/">
