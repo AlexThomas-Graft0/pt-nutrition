@@ -31,7 +31,11 @@ export default function Home() {
               websites for PTs and Nutritions, we know exactly what works and
               how to grow your business.
             </div>
-            <Button>Start Now</Button>
+            <Link href="/Contact">
+              <a className="bg-green-400 hover:bg-green-300 text-xl font-semibold text-white px-2 py-1 rounded mt-5">
+                Start Now
+              </a>
+            </Link>
           </div>
         }
       >
