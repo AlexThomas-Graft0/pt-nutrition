@@ -33,8 +33,8 @@ export default function Marketing() {
           </div>
         }
       >
-        <div className="px-3">
-          <div className="text-xl mt-3 text-center">
+        <div className="px-3 w-3/4 justify-center my-3">
+          <div className="text-xl text-center">
             Finding the right marketing company among the multitude of choices
             available is not easy. For this reason we specialize in PTs and
             Nutrition Businesses. We aquire clients through effective online
@@ -43,9 +43,9 @@ export default function Marketing() {
         </div>
         <Cards cardData={features} />
         {/* scenarios */}
-        <div className="p-3 my-3">
+        <div className="p-3 my-5 w-3/4">
           <div className="my-3">
-            <h2 className="text-xl text-center font-bold">
+            <h2 className="text-xl text-center font-bold my-3">
               Scenario #1: You Already Have A Website
             </h2>
             <div className="md:text-xl">
@@ -56,8 +56,8 @@ export default function Marketing() {
               Does it fulfill your business objective of getting more patients?
             </div>
           </div>
-          <div className="my-3">
-            <h2 className="text-xl text-center font-bold">
+          <div className="my-5">
+            <h2 className="text-xl text-center font-bold my-3">
               Scenario #2: You Don't Have A Website Yet
             </h2>
             <div className="md:text-xl">
