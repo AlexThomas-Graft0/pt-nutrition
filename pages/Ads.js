@@ -72,11 +72,7 @@ export default function Ads() {
           </div>
           <div>A simple illustration can be:</div>
           <div className="my-10">
-            <Image
-              src="/images/online-advertisements-explained.jpg"
-              width="280"
-              height="600"
-            />
+            <Image src="/images/ads-flow-chart.jpg" width="280" height="600" />
           </div>
           <div className="w-3/4 text-center">
             Personal Trainers &amp; Nutritionists Marketing has a highly
