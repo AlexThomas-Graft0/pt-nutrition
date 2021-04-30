@@ -11,7 +11,7 @@ export default function Ads() {
         banner={
           <div className="h-96 bg-ads-header-image bg-cover bg-center flex flex-col justify-center items-center text-gray-800 text-center">
             <h1 className="text-5xl font-bold w-1/3">Ads</h1>
-            <div className="mt-3 text-2xl font-semibold w-1/2">
+            <div className="mt-3 text-2xl font-semibold">
               Online Advertising for PTS &amp; Nutritionists
             </div>
           </div>
@@ -22,7 +22,7 @@ export default function Ads() {
             How can you advertise online?
           </h2>
           {/* pull in internetlivestats.com/one-second stats for live feed */}
-          <div>
+          <div className="">
             Advertising online has never been easier.
             <ul className="list-none list-inside m-2">
               <li>
@@ -49,12 +49,12 @@ export default function Ads() {
             You can check out more stats here.
             <a href="https://www.internetlivestats.com">internet live stats</a>
           </div>
-          <div className="flex ">
-            <div className="w-96 border rounded mx-2 p-5 text-center shadow-lg">
+          <div className="flex justify-between md:w-1/2">
+            <div className=" border rounded mx-2 p-5 text-center shadow-lg md:w-1/2">
               Online advertising is one of the best ROI forms of client
               aquisition around today.
             </div>
-            <div className="w-96 border rounded mx-2 p-5 text-center shadow-lg">
+            <div className="border rounded mx-2 p-5 text-center shadow-lg md:w-1/2">
               Online Advertising is a great way to acquire new clients for PTs
               &amp; Nutritionists.
             </div>
@@ -66,7 +66,7 @@ export default function Ads() {
               height="540"
             />
           </div>
-          <div>
+          <div className="justify-center text-center">
             Each advertising platform provides various targeting options to
             advertise to potential clients.
           </div>
