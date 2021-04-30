@@ -45,11 +45,7 @@ export default function SMM() {
           </div>
           <div>The process can be illustrated as follows:</div>
           <div className="my-10">
-            <Image
-              src="/images/social-media-explained.jpg"
-              width="360"
-              height="1000"
-            />
+            <Image src="/images/smm-flow-chart.jpg" width="360" height="1000" />
           </div>
           <div className="w-3/4 text-center">
             We create, optimize and manage your PT & Nutritionist business
