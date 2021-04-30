@@ -55,12 +55,12 @@ export default function Navbar() {
     <>
       <div className="w-full hidden md:flex justify-between items-center p-5 my-3">
         <Link href="/Contact">
-          <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
+          <a className="bg-green-400 hover:bg-green-300 text-s font-semibold text-white px-2 py-1 rounded">
             Contact
           </a>
         </Link>
         <Link href="/Contact">
-          <a className="bg-green-400 hover:bg-green-300 text-s font-bold text-white px-2 py-1 rounded">
+          <a className="bg-green-400 hover:bg-green-300 text-s font-semibold text-white px-2 py-1 rounded">
             Free Consultation
           </a>
         </Link>
